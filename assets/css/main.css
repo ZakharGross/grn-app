@@ -1,0 +1,103 @@
+html, body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: rgb(255,255,255);
+  color: rgb(74,74,74);
+  letter-spacing: .1px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+
+a, a:visited {
+  color: rgb(70,180,90);
+  border-bottom: 1px solid rgb(70,180,90);
+}
+a:active, a:hover, a:focus {
+  color: rgba(70,180,90,.7);
+  border-bottom: 0;
+}
+
+/* Headers */
+
+h1, h2, h3, h4 {
+  font-weight: 300;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.4rem;
+}
+
+/* Menu */
+
+.index-page .menu-app .nav.is-fixed {
+  position: fixed;
+  top: 0; right: 0; left: 0;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  background-color: rgb(255,255,255);
+}
+.index-page .menu-app .nav a.phone {
+  color: rgb(70,180,90);
+  font-size: 1.7rem;
+}
+.index-page .menu-app .nav a {
+  font-size: 1.3rem;
+  border: 0;
+}
+.index-page .menu-app .nav .nav-toggle span {
+  background-color: rgb(70,180,90);
+}
+.index-page .menu-app .nav .nav-toggle:hover {
+  background-color: transparent;
+}
+
+/* Helpers */
+
+.title.is-green {
+  color: rgb(70,180,90);
+}
+.hero.is-content {
+  background-color: rgba(255,255,255,.92);
+  border-radius: 3px;
+  padding-left: 2.6rem;
+  padding-right: 2.6rem;
+}
+.hero.is-content p {
+  font-size: 1.05rem;
+}
+.is-more-padding-vertical {
+  padding-top: 10rem;
+  padding-bottom: 7rem;
+}
+.line-green {
+  background-color: rgba(70,180,90,.6);
+  height: 5px;
+  width: 77%;
+}
+
+/* Pages */
+
+.index-background .title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.index-background {
+  background-image: url('~assets/img/index-page.jpg');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+/* Nuxt.js */
+
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s
+}
+.page-enter, .page-leave-active {
+  opacity: 0
+}

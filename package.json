@@ -1,0 +1,24 @@
+{
+  "name": "GdeRemonta.Net",
+  "version": "1.0.0",
+  "description": "Gde Remonta Net site.",
+  "author": "Vikky Shostak",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.15.3",
+    "bulma": "^0.3.1",
+    "nuxt": "latest",
+    "sweetalert2": "^6.3.2",
+    "v-mask": "^1.0.2"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "devDependencies": {
+    "node-sass": "^4.3.0",
+    "sass-loader": "^4.1.1"
+  }
+}

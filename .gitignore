@@ -1,3 +1,7 @@
+# Nuxt.js
+node_modules/
+dist/
+.nuxt/
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
