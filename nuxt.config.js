@@ -41,11 +41,13 @@ module.exports = {
   build: {
     vendor: [
       'axios',
-      'v-mask'
+      'v-mask',
+      'instafeed.js'
     ]
   },
   plugins: [
-    '~plugins/yandex-metrika.js'
+    '~plugins/yandex-metrika.js',
+    '~plugins/instafeed.js',
   ],
   /*
    ** Customize the progress-bar color

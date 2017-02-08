@@ -34,25 +34,25 @@ h2 {
 
 /* Menu */
 
-.index-page .menu-app .nav.is-fixed {
+.menu-app .nav.is-fixed {
   position: fixed;
   top: 0; right: 0; left: 0;
   padding-top: .5rem;
   padding-bottom: .5rem;
   background-color: rgb(255,255,255);
 }
-.index-page .menu-app .nav a.phone {
+.menu-app .nav a.phone {
   color: rgb(70,180,90);
   font-size: 1.7rem;
 }
-.index-page .menu-app .nav a {
+.menu-app .nav a {
   font-size: 1.3rem;
   border: 0;
 }
-.index-page .menu-app .nav .nav-toggle span {
+.menu-app .nav .nav-toggle span {
   background-color: rgb(70,180,90);
 }
-.index-page .menu-app .nav .nav-toggle:hover {
+.menu-app .nav .nav-toggle:hover {
   background-color: transparent;
 }
 

@@ -1,6 +1,5 @@
 <template>
   <div class="index-page">
-		<app-menu/>
 		<div class="index-background">
 	  	<div class="container is-more-padding-vertical">
 		  	<div class="content">
@@ -34,17 +33,24 @@
 					</div>
 				</section>
 			</div>
+		</div>  
+  	<div class="container">
+	  	<div class="content">
+		  	<section class="hero is-content">
+					<div class="hero-body has-text-centered">
+						<h2 class="title">Живой журнал в Instagram</h2>
+						<p><span class="icon"><i class="fa fa-instagram"></i></span>&nbsp;<a href="https://www.instagram.com/gderemonta_net/" target="_blank">gderemonta_net</a></p>
+						<div id="instafeed"></div>
+		        <button class="button" id="load-more">Показать ещё!</button>
+					</div>
+				</section>
+			</div>
 		</div>
   </div>
 </template>
 
 <script>
-	import AppMenu from '~components/Menu.vue'
-
   export default {
-  	components: {
-	    AppMenu
-	  },
     head () {
       return {
         title: 'Качественный ремонт и профессиональный монтаж в Санкт-Петербурге и Ленинградской области',
