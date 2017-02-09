@@ -1,6 +1,6 @@
 if (process.BROWSER_BUILD) {
-	const Instafeed = require('instafeed.js');
-	const loadButton = document.getElementById('load-more');
+	let Instafeed = require('instafeed.js');
+	let loadButton = document.getElementById('load-more');
 
 	let feed = new Instafeed({
     get: 'user',

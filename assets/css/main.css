@@ -79,6 +79,47 @@ h2 {
   height: 5px;
   width: 77%;
 }
+ul.list-category li {
+  list-style: none;
+}
+ul.list-category li a {
+  font-size: 1.3rem;
+}
+.is-gray {
+  background-color: rgb(245,245,245);
+}
+.is-gray .hero {
+  background-color: transparent;
+}
+.bordered h4 {
+  color: rgb(125,125,125);
+  margin-bottom: .5rem;
+}
+.bordered {
+  margin-top: 5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding: 1.4rem;
+  color: rgb(125,125,125);
+  border: 1px dashed rgb(70,180,90);
+  border-radius: 3px;
+}
+.text-medium {
+  font-size: 1.1rem;
+}
+
+/* Forms */
+
+.form input[type=text],
+.form input[type=tel] {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: .8rem 1.4rem;
+  margin-bottom: .5rem;
+  color: rgb(125,125,125);
+  border: 1px solid rgb(225,225,225);
+  border-radius: 3px;
+}
 
 /* Pages */
 
@@ -92,6 +133,9 @@ h2 {
   background-position: top center;
   background-repeat: no-repeat;
 }
+.footer {
+  background-color: rgb(235,235,235);
+}
 
 /* Nuxt.js */
 
@@ -100,4 +144,11 @@ h2 {
 }
 .page-enter, .page-leave-active {
   opacity: 0
+}
+
+/* Bulma */
+
+.is-128x128 {
+  margin-left: auto;
+  margin-right: auto;
 }

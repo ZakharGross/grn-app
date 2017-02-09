@@ -17,7 +17,7 @@
 					БИК 044030920</p>
 	  		</div>
 	  		<div class="column is-one-third-desktop is-half-tablet is-full-mobile">
-	  			<p>Санкт-Петербург, ул. Планерная, д. 15 (<a>схема</a>)</p>
+	  			<p>г. Санкт-Петербург, ул. Планерная, д. 15</p>
 	  			<p>
             Телефон: <a href="tel:+78124253580">+7 (812) 425-35-80</a><br/>
             Эл. почта: <a href="mailto:4253580@mail.ru">4253580@mail.ru</a>
