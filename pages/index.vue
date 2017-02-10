@@ -96,13 +96,7 @@
 										<h4>&mdash; Есть вопросы по моей работе или услугам?</h4>
 										<h4>&mdash; Оставьте свой номер, я перезвоню вам!</h4>
 										<br/>
-										<form class="form" action="">
-											<p>
-												<input type="text" name="client_name" placeholder="Ваше имя"/><br/>
-												<input type="tel" name="client_phone" placeholder="Номер телефона"/>
-											</p>
-											<p><button class="button is-warning is-medium">Отправить!</button></p>
-										</form>
+										<app-order-form/>
 									</div>
 								</div>
 							</div>
@@ -114,13 +108,15 @@
 		<div class="container">
 	  	<div class="content">
 		  	<section class="hero is-medium">
-					<div class="hero-body has-text-centered">
-						<h2 class="title">
+					<div class="hero-body">
+						<h2 class="title has-text-centered">
 							Живой журнал в Instagram<br/>
 							<a href="https://www.instagram.com/gderemonta_net/" target="_blank">@gderemonta_net</a>
 						</h2>
-						<div id="instafeed"></div>
-		        <!--<button class="button" id="load-more">Показать ещё!</button>-->
+						<br/>
+						<br/>
+						<br/>
+						<div class="columns is-mobile is-multiline" id="instafeed"></div>
 					</div>
 				</section>
 			</div>
@@ -129,18 +125,23 @@
 </template>
 
 <script>
+  import AppOrderForm from '~components/OrderForm.vue'
+  
   export default {
+    components: {
+      AppOrderForm
+    },
     head () {
       return {
         title: 'Качественный ремонт и профессиональный монтаж в Санкт-Петербурге и Ленинградской области',
         meta: [
           {
           	hid: 'description', name: 'description', 
-          	content: ''
+          	content: 'Я не профессиональный строитель, но выполнил большое количество работ по монтажу и сделал огромное множество проектов по ремонту. Благодаря этому, получил колоссальный опыт в сфере строительства.'
           },
           {
           	hid: 'keywords', name: 'keywords', 
-          	content: ''
+          	content: 'проектирование систем обогрева, установка систем обогрева, обогрев труб водоснабжения, обогрев канализации, обогрев кровли, обогрев водостоков, обогрев желобов, обогрев промышленных объектов, обогрев грунта, обогрев теплиц, обогрев площадок, обогрев ступеней, монтаж тёплого пола, тёплый пол любое покрытие, резистивный кабель, греющие маты, система водяного отопления, инфракрасная плёнка, стержни эко ондоль'
           }
         ]
       }

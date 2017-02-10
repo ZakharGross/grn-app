@@ -5,6 +5,10 @@
 	  	<div class="columns is-multiline is-mobile">
 	  		<div class="column is-one-third-desktop is-half-tablet is-full-mobile">
 	  			<p>&copy; 2017. <a href="/">Где Ремонта Нет!</a> Качественный ремонт и профессиональный монтаж в Санкт-Петербурге и Ленинградской области.</p>
+	  			<p>
+	  				<span class="icon"><i class="fa fa-instagram"></i></span>&nbsp;<a href="https://www.instagram.com/gderemonta_net/" target="_blank">Инстраграм</a>&nbsp;
+	  				<span class="icon"><i class="fa fa-facebook"></i></span>&nbsp;<a href="https://www.facebook.com/gderemonta.net/" target="_blank">Фейсбук</a>
+	  			</p>
 	  			<p>При использовании материалов ссылка на сайт <strong>GdeRemonta.Net</strong> обязательна. Цены, указанные на данном сайте, не являются публичной офертой.</p>
 	  		</div>
 	  		<div class="column is-one-third-desktop is-half-tablet is-full-mobile">

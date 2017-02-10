@@ -9,6 +9,37 @@ html, body {
   padding: 0;
 }
 
+/* Inputs */
+
+input[placeholder] {
+  color: rgba(125,125,125,.5);
+}
+::-webkit-input-placeholder {
+  color: rgba(125,125,125,.5);
+}
+::-moz-placeholder {
+  color: rgba(125,125,125,.5);
+}
+:-moz-placeholder {
+  color: rgba(125,125,125,.5);
+}
+:-ms-input-placeholder {
+  color: rgba(125,125,125,.5);
+}
+
+:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+:focus::-moz-placeholder {
+  color: transparent;
+}
+:focus:-moz-placeholder {
+  color: transparent;
+}
+:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
 /* Links */
 
 a, a:visited {
@@ -42,8 +73,8 @@ h2 {
   background-color: rgb(255,255,255);
 }
 .menu-app .nav a.phone {
-  color: rgb(70,180,90);
-  font-size: 1.7rem;
+  color: rgb(105,105,105);
+  font-size: 1.6rem;
 }
 .menu-app .nav a {
   font-size: 1.3rem;
@@ -54,6 +85,9 @@ h2 {
 }
 .menu-app .nav .nav-toggle:hover {
   background-color: transparent;
+}
+.menu-app .image img {
+  width: inherit;
 }
 
 /* Helpers */
@@ -151,4 +185,16 @@ ul.list-category li a {
 .is-128x128 {
   margin-left: auto;
   margin-right: auto;
+}
+
+/* SweetAlert2 */
+
+.swal2-modal.swal2-show,
+.swal2-modal.swal2-show h2 {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+hr.swal2-spacer {
+  background-color: transparent;
 }

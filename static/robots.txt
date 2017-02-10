@@ -1,0 +1,29 @@
+User-agent: Yandex
+Disallow: /_nuxt/
+Disallow: /tech/
+Disallow: /images/*.ai
+Disallow: /images/*.psd
+Disallow: /yandex_557cf8439f76bb95.html
+Disallow: /googleb8f8b67feb0b9216.html
+Disallow: /wmail_8c3dbe487dde8cf9dc3ded76f990ec95.html
+Host: https://gderemonta.net
+
+User-agent: Googlebot
+Disallow: /_nuxt/
+Disallow: /tech/
+Disallow: /images/*.ai
+Disallow: /images/*.psd
+Disallow: /yandex_557cf8439f76bb95.html
+Disallow: /googleb8f8b67feb0b9216.html
+Disallow: /wmail_8c3dbe487dde8cf9dc3ded76f990ec95.html
+
+User-agent: *
+Disallow: /_nuxt/
+Disallow: /tech/
+Disallow: /images/*.ai
+Disallow: /images/*.psd
+Disallow: /yandex_557cf8439f76bb95.html
+Disallow: /googleb8f8b67feb0b9216.html
+Disallow: /wmail_8c3dbe487dde8cf9dc3ded76f990ec95.html
+
+Sitemap: https://gderemonta.net/sitemap.xml

@@ -3,7 +3,7 @@ if (process.BROWSER_BUILD) {
     (w[c] = w[c] || []).push(function () {
       try {
         w.yaCounter41774234 = new Ya.Metrika({
-          id: 42289199,
+          id: 42715709,
           clickmap: true,
           trackLinks: true,
           accurateTrackBounce: true,

@@ -4,7 +4,9 @@
       <div class="container">
         <div class="nav-left">
           <a class="nav-item">
-            Где Ремонта Нет!
+            <figure class="image">
+              <img src="~assets/img/grn-logo.svg" alt="grn logo"/>
+            </figure>
           </a>
         </div>
         <div class="nav-center">
@@ -15,11 +17,6 @@
             <span class="is-hidden-touch">(812) 425-35-80</span>
           </a>
         </div>
-        <span class="nav-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
         <div class="nav-right nav-menu">
           <nuxt-link tag="a" to="/" class="nav-item">Услуги и цены</nuxt-link>
           <nuxt-link tag="a" to="/" class="nav-item">Контакты</nuxt-link>
