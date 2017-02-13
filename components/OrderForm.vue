@@ -2,20 +2,20 @@
 	<div class="offer">
 		<form class="form" action="" method="POST">
 			<p>
-				<input v-model="client_name" name="client_name" placeholder="Ваше имя" type="text" required="" /><br/>
-				<input v-mask="'+7 (###) ###-##-##'" v-model="client_phone" name="client_phone" placeholder="Телефон для связи" type="tel" required="" />
+				<input v-model="client_name" name="client_name" placeholder="Ваше имя *" type="text" required="" /><br/>
+				<input v-mask="'+7 (###) ###-##-##'" v-model="client_phone" name="client_phone" placeholder="Телефон для связи *" type="tel" required="" />
 			</p>
-			<p><button v-on:click.prevent="sendOffer()" class="button is-warning is-medium">Отправить!</button></p>
+			<p><button v-on:click.prevent="sendOffer()" class="button is-warning is-medium">Отправить заявку!</button></p>
 		</form>
   </div>
 </template>
 
 <script>
-	import Vue from 'vue'
-  import VueMask from 'v-mask'
-  import axios from 'axios'
-
-  Vue.use(VueMask)
+	import Vue from 'vue';
+  import VueMask from 'v-mask';
+  import axios from 'axios';
+  
+  Vue.use(VueMask);
 
 	export default {
 		data() {

@@ -72,19 +72,17 @@ h2 {
   padding-bottom: .5rem;
   background-color: rgb(255,255,255);
 }
-.menu-app .nav a.phone {
-  color: rgb(105,105,105);
+.menu-app .nav .nav-center a {
+  color: rgb(50,115,220);
   font-size: 1.6rem;
 }
+.menu-app .nav .nav-center a:hover {
+  color: rgba(50,115,220,.5);
+}
 .menu-app .nav a {
+  color: rgb(70,180,90);
   font-size: 1.3rem;
   border: 0;
-}
-.menu-app .nav .nav-toggle span {
-  background-color: rgb(70,180,90);
-}
-.menu-app .nav .nav-toggle:hover {
-  background-color: transparent;
 }
 .menu-app .image img {
   width: inherit;
@@ -94,6 +92,13 @@ h2 {
 
 .title.is-green {
   color: rgb(70,180,90);
+}
+.subtitle.is-blue {
+  color: rgba(50,115,220,.8);
+}
+.subtitle.is-blue,
+.subtitle.is-blue i.fa {
+  font-size: 1.2rem;
 }
 .hero.is-content {
   background-color: rgba(255,255,255,.92);
@@ -111,7 +116,7 @@ h2 {
 .line-green {
   background-color: rgba(70,180,90,.6);
   height: 5px;
-  width: 77%;
+  width: 70%;
 }
 ul.list-category li {
   list-style: none;
@@ -141,6 +146,9 @@ ul.list-category li a {
 .text-medium {
   font-size: 1.1rem;
 }
+.text-large {
+  font-size: 1.4rem;
+}
 
 /* Forms */
 
@@ -158,7 +166,7 @@ ul.list-category li a {
 /* Pages */
 
 .index-background .title {
-  font-size: 4rem;
+  font-size: 3.8rem;
   font-weight: bold;
 }
 .index-background {
@@ -167,8 +175,31 @@ ul.list-category li a {
   background-position: top center;
   background-repeat: no-repeat;
 }
+.service-obogrev-background {
+  background-image: url('~assets/img/page-service-obogrev.jpg');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
 .footer {
   background-color: rgb(235,235,235);
+}
+
+/* Modals */
+
+.service-modal ul.list-category a {
+  font-size: 1.2rem;
+}
+.service-modal ul.list-category .tag {
+  display: none;
+}
+.service-modal ul.list-category li {
+  margin-bottom: .3rem;
+}
+.service-modal h2.title {
+  color: rgb(255,255,255);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* Nuxt.js */

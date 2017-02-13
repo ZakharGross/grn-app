@@ -46,13 +46,12 @@ module.exports = {
     ]
   },
   plugins: [
-    '~plugins/yandex-metrika.js',
-    '~plugins/instafeed.js',
+    '~plugins/yandex-metrika.js'
   ],
   /*
    ** Customize the progress-bar color
-   */
+   
   loading: {
     color: 'rgb(75, 183, 90)'
-  }
+  }*/
 }

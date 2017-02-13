@@ -72,34 +72,21 @@
 		  	<div class="content">
 			  	<section class="hero is-medium">
 						<div class="hero-body">
-							<div class="columns">
-								<div class="column is-full-mobile">
-									<h2 class="title">Проектирование и установка систем обогрева</h2>								
-									<ul class="list-category">
-										<li><a href="">Обогрев труб водоснабжения, канализации</a></li>
-										<li><a href="">Обогрев кровли, водостоков, желобов</a></li>
-										<li><a href="">Обогрев промышленных объектов</a></li>
-										<li><a href="">Обогрев грунта, теплиц</a></li>
-										<li><a href="">Обогрев площадок</a></li>
-										<li><a href="">Обогрев ступеней</a></li>
-									</ul>
-									<h2 class="title">Монтаж тёплого пола под любое покрытие</h2>						
-									<ul class="list-category">
-										<li><a href="">Резистивный кабель, греющие маты</a></li>
-										<li><a href="">Система водяного отопления</a></li>
-										<li><a href="">Инфракрасная плёнка</a></li>
-										<li><a href="">Стержни Эко-Ондоль</a></li>
-									</ul>
-								</div>
-								<div class="column is-full-mobile">
-									<div class="bordered">
-										<h4>&mdash; Есть вопросы по моей работе или услугам?</h4>
-										<h4>&mdash; Оставьте свой номер, я перезвоню вам!</h4>
-										<br/>
-										<app-order-form/>
+							<div class="menu-page-app">
+						    <div class="columns">
+									<div class="column is-full-mobile">
+										<app-page-menu/>
+									</div>
+									<div class="column is-full-mobile">
+										<div class="bordered">
+											<h4>&mdash; Есть вопросы по моей работе или услугам?</h4>
+											<h4>&mdash; Оставьте свой номер, я перезвоню вам!</h4>
+											<br/>
+											<app-order-form/>
+										</div>
 									</div>
 								</div>
-							</div>
+						  </div>
 						</div>
 					</section>
 				</div>
@@ -117,6 +104,10 @@
 						<br/>
 						<br/>
 						<div class="columns is-mobile is-multiline" id="instafeed"></div>
+						<br/>
+						<div class="has-text-centered">
+							<button class="is-medium is-info is-outlined button" id="load-more">Посмотреть ещё!</button>
+						</div>
 					</div>
 				</section>
 			</div>
@@ -125,11 +116,56 @@
 </template>
 
 <script>
-  import AppOrderForm from '~components/OrderForm.vue'
+  import AppOrderForm from '~components/OrderForm.vue';
+  import AppPageMenu from '~components/PageMenu.vue';
+
+  if (process.BROWSER_BUILD) {
+	  const Instafeed = require('instafeed.js');
+		const moment = require('moment');
+
+		let loadButton = document.getElementById('load-more');
+
+		let feed = new Instafeed({
+	    get: 'user',
+	    userId: 4509914945,
+	    accessToken: '4509914945.ba4c844.af1348fddd874088b357394b1bc5dfca',
+	    resolution: 'standard_resolution',
+	    limit: 8,
+	    template: '<div class="column is-one-quarter-desktop is-half-tablet is-full-mobile">' +
+	      '<figure class="image is-square"><img style="border-radius:3px;" src="{{image}}" alt="image {{model.created_time}}"/></figure>' +
+	      '<p><strong>{{model.created_time}}</strong><br/>{{model.caption.text}}</p>' +
+	      '</div>',
+	    filter: function(image) {
+	      // Change created_time.
+	      moment.locale('ru');
+	      var timestamp = new Date(image.created_time);
+	      var dateString = moment.unix(image.created_time).format('YYYY-MM-DD HH:mm');
+	      image.created_time = moment(dateString).startOf('minute').fromNow();
+	      // Change caption.
+	      if (image.caption.text.length > 150) {
+	        image.caption.text = image.caption.text.slice(0, 150) + '...';
+	      }
+	      // Return array.
+	      return image;
+	    },
+	    after: function() {
+        if (!this.hasNext()) {
+          loadButton.classList.add('is-hidden-mobile', 'is-hidden-tablet', 'is-hidden-desktop');
+        }
+      },
+	  });
+
+	  loadButton.addEventListener('click', function() {
+      feed.next();
+    });
+    
+    feed.run();
+	}
   
   export default {
     components: {
-      AppOrderForm
+      AppOrderForm, 
+      AppPageMenu
     },
     head () {
       return {

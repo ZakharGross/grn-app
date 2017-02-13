@@ -2,8 +2,7 @@
   <div class="gnr-app">
   	<app-menu/>
     <nuxt/>
-    <app-footer/>
-    <noscript><img src="https://mc.yandex.ru/watch/42715709" style="position:absolute; left:-9999px;" alt="" /></noscript>
+    <app-footer/>    
   </div>
 </template>
 
