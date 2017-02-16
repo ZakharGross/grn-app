@@ -180,8 +180,20 @@ ul.list-category li a {
   background-position: top center;
   background-repeat: no-repeat;
 }
+.service-proekt-background {
+  background-image: url('~assets/img/page-service-proekt.jpg');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
 .service-obogrev-background {
   background-image: url('~assets/img/page-service-obogrev.jpg');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.service-montazh-background {
+  background-image: url('~assets/img/page-service-montazh.jpg');
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;

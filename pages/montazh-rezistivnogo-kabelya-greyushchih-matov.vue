@@ -1,6 +1,6 @@
 <template>
   <div class="service-page">
-		<div class="service-obogrev-background">
+		<div class="service-montazh-background">
 	  	<div class="container is-more-padding-vertical">
 		  	<div class="content">
 			  	<section class="hero is-content">
@@ -59,10 +59,6 @@
             <br/>
             <br/>
             <div class="columns is-mobile is-multiline" id="instafeed"></div>
-            <br/>
-            <div class="has-text-centered">
-              <button class="is-medium is-info is-outlined button" id="load-more">Посмотреть ещё!</button>
-            </div>
           </div>
         </section>
       </div>
@@ -77,10 +73,8 @@
     const Instafeed = require('instafeed.js');
     const moment = require('moment');
 
-    let loadButton = document.getElementById('load-more');
-
     let feed = new Instafeed({
-      get: 'tagget',
+      get: 'tagged',
       tagName: 'ремонт',
       userId: 4509914945,
       accessToken: '4509914945.ba4c844.af1348fddd874088b357394b1bc5dfca',
@@ -101,17 +95,8 @@
           image.caption.text = image.caption.text.slice(0, 150) + '...';
         }
         // Return array.
-        return image;
-      },
-      after: function(image) {
-        if (!this.hasNext()) {
-          loadButton.classList.add('is-hidden-mobile', 'is-hidden-tablet', 'is-hidden-desktop');
-        }
-      },
-    });
-
-    loadButton.addEventListener('click', function() {
-      feed.next();
+        return image.tags.indexOf('монтажкабеля') > 0;
+      }
     });
     
     feed.run();

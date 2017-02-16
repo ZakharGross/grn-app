@@ -12,7 +12,7 @@
 				  					Установка систем обогрева
 				  				</div>
 				  				<h1 class="title is-green">Обогрев труб водоснабжения, канализации</h1>
-								</div>	  				
+								</div>
 				  			<div class="column">
 				  				<p>Описание основных работ при обогреве труб водоснабжения и канализации.</p>
 				  			</div>
@@ -59,10 +59,6 @@
             <br/>
             <br/>
             <div class="columns is-mobile is-multiline" id="instafeed"></div>
-            <br/>
-            <div class="has-text-centered">
-              <button class="is-medium is-info is-outlined button" id="load-more">Посмотреть ещё!</button>
-            </div>
           </div>
         </section>
       </div>
@@ -77,11 +73,8 @@
     const Instafeed = require('instafeed.js');
     const moment = require('moment');
 
-    let loadButton = document.getElementById('load-more');
-
     let feed = new Instafeed({
-      get: 'tagget',
-      tagName: 'обогревтрубы',
+        get: 'user',
       userId: 4509914945,
       accessToken: '4509914945.ba4c844.af1348fddd874088b357394b1bc5dfca',
       resolution: 'standard_resolution',
@@ -101,22 +94,13 @@
           image.caption.text = image.caption.text.slice(0, 150) + '...';
         }
         // Return array.
-        return image;
-      },
-      after: function(image) {
-        if (!this.hasNext()) {
-          loadButton.classList.add('is-hidden-mobile', 'is-hidden-tablet', 'is-hidden-desktop');
-        }
-      },
+        return image.tags.indexOf('обогревкровли') > 0;
+      }
     });
 
-    loadButton.addEventListener('click', function() {
-      feed.next();
-    });
-    
     feed.run();
   }
-  
+
   export default {
     components: {
       AppOrderForm
@@ -126,11 +110,11 @@
         title: 'Обогрев труб водоснабжения, канализации. Проектирование и установка систем обогрева',
         meta: [
           {
-          	hid: 'description', name: 'description', 
+          	hid: 'description', name: 'description',
           	content: 'Я не профессиональный строитель, но выполнил большое количество работ по монтажу и сделал огромное множество проектов по ремонту. Благодаря этому, получил колоссальный опыт в сфере строительства.'
           },
           {
-          	hid: 'keywords', name: 'keywords', 
+          	hid: 'keywords', name: 'keywords',
           	content: 'проектирование систем обогрева, установка систем обогрева, обогрев труб водоснабжения, обогрев канализации'
           }
         ]
