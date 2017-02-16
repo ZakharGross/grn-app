@@ -81,7 +81,7 @@
 
     let feed = new Instafeed({
       get: 'tagget',
-      tagName: 'монтажкабеля',
+      tagName: 'ремонт',
       userId: 4509914945,
       accessToken: '4509914945.ba4c844.af1348fddd874088b357394b1bc5dfca',
       resolution: 'standard_resolution',
