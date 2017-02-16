@@ -77,9 +77,9 @@
 									<div class="column is-full-mobile">
 										<app-page-menu/>
 									</div>
-									<div class="column is-full-mobile">
+									<div class="column is-full-mobile middle-aligned">
 										<div class="bordered">
-											<h4>&mdash; Есть вопросы по моей работе или услугам?</h4>
+											<h4>&mdash; Есть вопросы по моей работе и услугам?</h4>
 											<h4>&mdash; Оставьте свой номер, я перезвоню вам!</h4>
 											<br/>
 											<app-order-form/>

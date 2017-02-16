@@ -8,13 +8,12 @@
 				  		<div class="columns">
 				  			<div class="column">
 				  				<div class="subtitle is-blue">
-				  					<span class="icon"><i class="fa fa-snowflake-o"></i></span>
-				  					Установка систем обогрева
+				  					<span class="icon"><i class="fa fa-object-ungroup"></i></span>&nbsp;&nbsp;Проектирование
 				  				</div>
-				  				<h1 class="title is-green">Обогрев труб водоснабжения, канализации</h1>
+				  				<h1 class="title is-green">Комплексная подготовка проектов</h1>
 								</div>	  				
 				  			<div class="column">
-				  				<p>Описание основных работ при обогреве труб водоснабжения и канализации.</p>
+				  				<p>Описание основных работ при комплексной подготовке проектов.</p>
 				  			</div>
 				  		</div>
 			  		</div>
@@ -81,7 +80,7 @@
 
     let feed = new Instafeed({
       get: 'tagget',
-      tagName: 'обогревтрубы',
+      tagName: 'проектирование',
       userId: 4509914945,
       accessToken: '4509914945.ba4c844.af1348fddd874088b357394b1bc5dfca',
       resolution: 'standard_resolution',
@@ -123,15 +122,15 @@
     },
     head () {
       return {
-        title: 'Обогрев труб водоснабжения, канализации. Проектирование и установка систем обогрева',
+        title: 'Комплексная подготовка проектов. Проектирование',
         meta: [
           {
           	hid: 'description', name: 'description', 
-          	content: 'Я не профессиональный строитель, но выполнил большое количество работ по монтажу и сделал огромное множество проектов по ремонту. Благодаря этому, получил колоссальный опыт в сфере строительства.'
+          	content: ''
           },
           {
           	hid: 'keywords', name: 'keywords', 
-          	content: 'проектирование систем обогрева, установка систем обогрева, обогрев труб водоснабжения, обогрев канализации'
+          	content: ''
           }
         ]
       }

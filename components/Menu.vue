@@ -10,11 +10,11 @@
           </a>
         </div>
         <div class="nav-center">
-          <a href="tel:+78124253580" class="nav-item phone">
+          <a href="tel:+78124261920" class="nav-item phone">
             <span class="icon">
               <i class="fa fa-phone"></i>
             </span>
-            <span class="is-hidden-touch">&nbsp;(812) 425-35-80</span>
+            <span class="is-hidden-touch">&nbsp;(812) 426-19-20</span>
           </a>
           <a href="#" class="nav-item is-hidden-desktop" v-on:click.prevent="openServiceModal()">
             <span class="icon">

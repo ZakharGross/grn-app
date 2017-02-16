@@ -1,7 +1,7 @@
 <?php
   // Entering vars.
-  $to = "4253580@mail.ru";
-  //$to = "4261910@mail.ru";
+  //$to = "4253580@mail.ru";
+  $to = "4261920@mail.ru";
   //$to = "vic.shine@yandex.ru";
   $headers = "From: GdeRemonta.Net Mailer <no-reply@gdemoroza.net>";
   $subject = "Внимание! Сообщение с сайта GdeRemonta.Net";

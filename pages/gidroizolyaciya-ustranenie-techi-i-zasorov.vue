@@ -1,6 +1,6 @@
 <template>
   <div class="service-page">
-		<div class="service-obogrev-background">
+		<div class="service-santeh-background">
 	  	<div class="container is-more-padding-vertical">
 		  	<div class="content">
 			  	<section class="hero is-content">
@@ -8,13 +8,13 @@
 				  		<div class="columns">
 				  			<div class="column">
 				  				<div class="subtitle is-blue">
-				  					<span class="icon"><i class="fa fa-snowflake-o"></i></span>
-				  					Установка систем обогрева
+				  					<span class="icon"><i class="fa fa-tint"></i></span>
+				  					Сантехнические работы любой сложности
 				  				</div>
-				  				<h1 class="title is-green">Обогрев труб водоснабжения, канализации</h1>
+				  				<h1 class="title is-green">Гидроизоляция, устранение течи и засоров</h1>
 								</div>	  				
 				  			<div class="column">
-				  				<p>Описание основных работ при обогреве труб водоснабжения и канализации.</p>
+				  				<p>Описание основных работ при гидроизоляции, устранении течи и засоров.</p>
 				  			</div>
 				  		</div>
 			  		</div>
@@ -81,7 +81,7 @@
 
     let feed = new Instafeed({
       get: 'tagget',
-      tagName: 'обогревтрубы',
+      tagName: 'сантехника',
       userId: 4509914945,
       accessToken: '4509914945.ba4c844.af1348fddd874088b357394b1bc5dfca',
       resolution: 'standard_resolution',

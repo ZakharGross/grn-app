@@ -13,8 +13,8 @@
                   <p><strong>Адрес офиса:</strong></p>
                   <p>197374, Россия, г. Санкт-Петербург, ул. Планерная, д. 15,<br/>БЦ «СетАвто», офис 211 (2-й этаж, вход с торца).</p>
                   <p>
-                    <a href="tel:+78124253580" class="text-large">+7 (812) 425-35-80</a><br/>
-                    <a href="mailto:4253580@mail.ru" class="text-large">4253580@mail.ru</a>
+                    <a href="tel:+78124261920" class="text-large">+7 (812) 426-19-20</a><br/>
+                    <a href="mailto:4261920@mail.ru" class="text-large">4261920@mail.ru</a>
                   </p>
                 </div>
               </div>

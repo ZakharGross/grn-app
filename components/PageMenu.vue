@@ -1,6 +1,10 @@
 <template>
   <div class="menu-page-app">
-    <h2 class="title">Проектирование и установка систем обогрева</h2>								
+  	<h2 class="title">Проектирование</h2>								
+		<ul class="list-category">
+			<li><a href="/proektirovanie/">Комплексная подготовка проектов</a>&nbsp;&nbsp;<span class="tag is-medium is-danger is-hidden-mobile">Выгодно!</span></li>
+		</ul>
+    <h2 class="title">Установка систем обогрева</h2>								
 		<ul class="list-category">
 			<li><a href="/obogrev-trub-vodosnabzheniya-kanalizacii/">Обогрев труб водоснабжения, канализации</a></li>
 			<li><a href="/obogrev-krovli-vodostokov-zhelobov/">Обогрев кровли, водостоков, желобов</a></li>
@@ -9,7 +13,7 @@
 			<li><a href="/obogrev-grunta-teplic/">Обогрев грунта, теплиц</a></li>
 			<li><a href="/obogrev-stupeney/">Обогрев ступеней</a></li>
 		</ul>
-		<h2 class="title">Монтаж тёплого пола под любое покрытие</h2>						
+		<h2 class="title">Монтаж тёплого пола</h2>						
 		<ul class="list-category">
 			<li><a href="/montazh-rezistivnogo-kabelya-greyushchih-matov/">Монтаж резистивного кабеля, греющих матов</a></li>
 			<li><a href="/montazh-infrakrasnoy-greyushchey-plyonki/">Монтаж инфракрасной греющей плёнки</a></li>

@@ -8,13 +8,13 @@
 				  		<div class="columns">
 				  			<div class="column">
 				  				<div class="subtitle is-blue">
-				  					<span class="icon"><i class="fa fa-snowflake-o"></i></span>
-				  					Установка систем обогрева
+				  					<span class="icon"><i class="fa fa-fire"></i></span>
+				  					Монтаж тёплого пола
 				  				</div>
-				  				<h1 class="title is-green">Обогрев труб водоснабжения, канализации</h1>
+				  				<h1 class="title is-green">Монтаж резистивного кабеля, греющих матов</h1>
 								</div>	  				
 				  			<div class="column">
-				  				<p>Описание основных работ при обогреве труб водоснабжения и канализации.</p>
+				  				<p>Описание основных работ при монтаже резистивного кабеля, греющих матов.</p>
 				  			</div>
 				  		</div>
 			  		</div>
@@ -81,7 +81,7 @@
 
     let feed = new Instafeed({
       get: 'tagget',
-      tagName: 'обогревтрубы',
+      tagName: 'монтажкабеля',
       userId: 4509914945,
       accessToken: '4509914945.ba4c844.af1348fddd874088b357394b1bc5dfca',
       resolution: 'standard_resolution',
