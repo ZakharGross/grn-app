@@ -7,24 +7,24 @@
     <h2 class="title">Установка систем обогрева</h2>								
 		<ul class="list-category">
 			<li><a href="/obogrev-trub-vodosnabzheniya-kanalizacii/">Обогрев труб водоснабжения, канализации</a></li>
+			<li><a href="#/obogrev-stupeney-ploshchadok-pandusov/">Обогрев ступеней, площадок, пандусов</a>&nbsp;&nbsp;<span class="tag is-medium is-info is-hidden-mobile">Под ключ!</span></li>
 			<li><a href="#/obogrev-krovli-vodostokov-zhelobov/">Обогрев кровли, водостоков, желобов</a></li>
 			<li><a href="#/obogrev-promyshlennyh-obektov/">Обогрев промышленных объектов</a></li>
-			<li><a href="#/obogrev-ploshchadok-pandusov/">Обогрев площадок, пандусов</a></li>
 			<li><a href="#/obogrev-grunta-teplic/">Обогрев грунта, теплиц</a></li>
-			<li><a href="#/obogrev-stupeney/">Обогрев ступеней</a></li>
 		</ul>
 		<h2 class="title">Монтаж тёплого пола</h2>						
 		<ul class="list-category">
 			<li><a href="/montazh-rezistivnogo-kabelya-greyushchih-matov/">Монтаж резистивного кабеля, греющих матов</a></li>
+			<li><a href="#/montazh-greyushih-sterzhnej-ekoondol/">Монтаж греющих стержней «Эко-Ондоль»</a></li>
 			<li><a href="#/montazh-infrakrasnoy-greyushchey-plyonki/">Монтаж инфракрасной греющей плёнки</a></li>
-			<li><a href="#/montazh-sterzhney-eko-ondol/">Монтаж стержней «Эко-Ондоль»</a>&nbsp;&nbsp;<span class="tag is-medium is-info is-hidden-mobile">Новинка!</span></li>
-			<li><a href="#/montazh-vodyanogo-teplogo-pola/">Монтаж водяного тёплого пола</a></li>
+			<li><a href="#/montazh-vodyanogo-teplogo-pola/">Монтаж водяного тёплого пола</a>&nbsp;&nbsp;<span class="tag is-medium is-success is-hidden-mobile">Профи!</span></li>
 		</ul>
 		<h2 class="title">Сантехнические работы любой сложности</h2>						
 		<ul class="list-category">
-			<li><a href="/gidroizolyaciya-ustranenie-techi-i-zasorov/">Гидроизоляция, устранение течи и засоров</a></li>
+			<li><a href="#/vodosnabzhenie-zagorodnogo-doma/">Водоснабжение загородного дома (скважина/колодец)</a></li>
 			<li><a href="#/ustanovka-santehnicheskogo-oborudovaniya/">Установка сантехнического оборудования</a></li>
-			<li><a href="#/razvodka-trub-vodosnabzheniya/">Разводка труб водоснабжения</a></li>
+			<li><a href="#/montazh-kotelnyh-vodonagrevatelej/">Монтаж водонагревателей, котельных</a></li>
+			<li><a href="#/ustanovka-skvazhinnogo-nasosa/">Установка скваженного насоса</a></li>
 		</ul>
   </div>
 </template>

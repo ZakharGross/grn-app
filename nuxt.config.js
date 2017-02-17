@@ -46,7 +46,8 @@ module.exports = {
     ]
   },
   plugins: [
-    '~plugins/yandex-metrika.js'
+    '~plugins/yandex-metrika.js',
+    '~plugins/vk-widget.js'
   ],
   /*
    ** Customize the progress-bar color

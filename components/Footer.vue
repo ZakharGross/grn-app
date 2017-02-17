@@ -33,5 +33,12 @@
 	  	</div>
   	</div>
   	<img src="https://mc.yandex.ru/watch/42715709" style="position:absolute; left:-9999px;" alt="yandex metrika"/>
+		<div id="vk_community_messages"></div>
   </div>
 </template>
+
+<script>
+	if (process.BROWSER_BUILD) {
+		VK.Widgets.CommunityMessages("vk_community_messages", 12567009, {tooltipButtonText: "Есть вопросы?"});
+	}
+</script>
