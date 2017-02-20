@@ -22,7 +22,7 @@
 		<h2 class="title">Сантехнические работы любой сложности</h2>						
 		<ul class="list-category">
 			<li><a href="#/vodosnabzhenie-zagorodnogo-doma/">Водоснабжение загородного дома (скважина/колодец)</a></li>
-			<li><a href="#/ustanovka-santehnicheskogo-oborudovaniya/">Установка сантехнического оборудования</a></li>
+			<li><a href="/ustanovka-santehnicheskogo-oborudovaniya/">Установка сантехнического оборудования</a></li>
 			<li><a href="#/montazh-kotelnyh-vodonagrevatelej/">Монтаж водонагревателей, котельных</a></li>
 			<li><a href="#/ustanovka-skvazhinnogo-nasosa/">Установка скваженного насоса</a></li>
 		</ul>

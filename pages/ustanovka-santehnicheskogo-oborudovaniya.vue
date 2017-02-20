@@ -8,13 +8,13 @@
 				  		<div class="columns">
 				  			<div class="column">
 				  				<div class="subtitle is-blue">
-				  					<span class="icon"><i class="fa fa-snowflake-o"></i></span>
-				  					Установка систем обогрева
+				  					<span class="icon"><i class="fa fa-tint"></i></span>
+				  					Сантехнические работы любой сложности
 				  				</div>
-				  				<h1 class="title is-green">Обогрев труб водоснабжения, канализации</h1>
+				  				<h1 class="title is-green">Установка сантехнического оборудования</h1>
 								</div>	  				
 				  			<div class="column">
-				  				<p>Описание основных работ при обогреве труб водоснабжения и канализации.</p>
+				  				<p>Описание основных работ при установке сантехнического оборудования.</p>
 				  			</div>
 				  		</div>
 			  		</div>
@@ -54,7 +54,7 @@
       <div class="content">
         <section class="hero is-small">
           <div class="hero-body">
-            <h2 class="title has-text-centered">Примеры работ, выполненные проекты</h2>
+            <h2 class="title has-text-centered">Примеры работ, выполненные проекты<br/>#УстановкаСантехники</h2>
             <br/>
             <br/>
             <br/>
@@ -109,7 +109,7 @@
     },
     head () {
       return {
-        title: 'Обогрев труб водоснабжения, канализации. Проектирование и установка систем обогрева',
+        title: 'Установка сантехнического оборудования. Сантехнические работы любой сложности',
         meta: [
           {
           	hid: 'description', name: 'description', 
