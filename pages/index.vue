@@ -60,7 +60,7 @@
 									<img src="~assets/img/garantia.svg" alt="garantia"/>
 								</figure>
 								<br/>
-								<p>Настоящая <strong>гарантия на все работы</strong> по ремонту и монтажу на 3 года</p>
+								<p>Настоящая <strong>гарантия на все работы</strong> по ремонту и монтажу на 1 год</p>
 							</div>
 						</div>
 					</div>

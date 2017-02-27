@@ -1,6 +1,6 @@
 <template>
   <div class="service-page">
-		<div class="service-santeh-background">
+		<div class="service-santeh-ustanovka-background">
 	  	<div class="container is-more-padding-vertical">
 		  	<div class="content">
 			  	<section class="hero is-content">
@@ -14,7 +14,7 @@
 				  				<h1 class="title is-green">Установка сантехнического оборудования</h1>
 								</div>	  				
 				  			<div class="column">
-				  				<p>Описание основных работ при установке сантехнического оборудования.</p>
+				  				<p>Установлю туалет, раковину, душевую и прочее оборудование. Возможна работа под ключ с разводкой водяных труб по дому.</p>
 				  			</div>
 				  		</div>
 			  		</div>
@@ -30,14 +30,33 @@
               <div class="menu-page-app">
                 <div class="columns">
                   <div class="column is-full-mobile">
-                    <h2>Почему мне доверяют такие работы?</h2>
-                    <p>Причина проста &mdash; профессионализм и компетентность.</p>
-                    <h2>Стоимость услуги</h2>
-                    <p>Цены.</p>
+                    <h2>Принципы моей работы</h2>
+                    <ul>
+                      <li>Только проверенный мной брэнды труб из полипропилена или метала;</li>
+                      <li>Обязательный монтаж терморегулятора;</li>
+                      <li>Я даю 1 год настоящей гарантии на все свои работы.</li>
+                    </ul>
+                    <h2>Стоимость услуг</h2>
+                    <!--<table class="table is-striped">
+                      <tbody>
+                        <tr><td>Монтаж инфракрасной плёнки</td><td>100 руб./пог.м</td></tr>
+                        <tr><td>Настил подложки</td><td>50 руб./м<sup>2</sup></td></tr>
+                        <tr><td>Штробление</td><td>200 руб./пог.м</td></tr>
+                        <tr><td>Монтаж терморегулятора</td><td>500 руб./шт.</td></tr>
+                        <tr><td>Укладка плитки на пол</td><td>800 руб./м<sup>2</sup></td></tr>
+                        <tr><td>Укладка ламинат</td><td>300 руб./м<sup>2</sup></td></tr>
+                        <tr><td>Транспортные расходы</td><td>600 руб./поездка</td></tr>
+                      </tbody>
+                    </table>-->
                   </div>
-                  <div class="column is-full-mobile middle-aligned">
+                  <div class="column is-full-mobile">
+                    <h3>Полезные советы <span class="tag is-medium is-success">Бонус!</span></h3>
+                    <ul>
+                      <li>Я точно знаю какого размера труба лучше, в вашем конкретном случае;</li>
+                      <li>Обязательно одеваю утеплитель на трубы.</li>
+                    </ul>
                     <div class="bordered">
-                      <h4>&mdash; Есть ещё вопросы по данной услуге?</h4>
+                      <h4>&mdash; Есть ещё вопросы или готовы сделать заказ?</h4>
                       <h4>&mdash; Оставьте свой номер, я перезвоню вам!</h4>
                       <br/>
                       <app-order-form/>
@@ -54,7 +73,7 @@
       <div class="content">
         <section class="hero is-small">
           <div class="hero-body">
-            <h2 class="title has-text-centered">Примеры работ, выполненные проекты<br/>#УстановкаСантехники</h2>
+            <h2 class="title has-text-centered">Примеры работ, выполненные проекты<br/>#установкасантехники</h2>
             <br/>
             <br/>
             <br/>
@@ -96,7 +115,7 @@
           image.caption.text = image.caption.text.slice(0, 150) + '...';
         }
         // Return array.
-        return image.tags.indexOf('установкасантехники') > 0;
+        return image.tags.indexOf('установкасантехники', 'стройка') > 0;
       }
     });
     
@@ -113,11 +132,11 @@
         meta: [
           {
           	hid: 'description', name: 'description', 
-          	content: 'Я не профессиональный строитель, но выполнил большое количество работ по монтажу и сделал огромное множество проектов по ремонту. Благодаря этому, получил колоссальный опыт в сфере строительства.'
+          	content: 'Установлю туалет, раковину, душевую и прочее оборудование. Возможна работа под ключ с разводкой водяных труб по дому.'
           },
           {
           	hid: 'keywords', name: 'keywords', 
-          	content: 'проектирование систем обогрева, установка систем обогрева, обогрев труб водоснабжения, обогрев канализации'
+          	content: 'установка сантехнического оборудования, сантехнические работы'
           }
         ]
       }

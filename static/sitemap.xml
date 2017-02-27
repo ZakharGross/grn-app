@@ -6,31 +6,97 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>https://gderemonta.net/</loc>
-  <lastmod>2017-02-17T13:58:21+00:00</lastmod>
+  <lastmod>2017-02-27T14:09:52+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://gderemonta.net/kontakty/</loc>
-  <lastmod>2017-02-17T13:58:21+00:00</lastmod>
+  <lastmod>2017-02-27T14:09:52+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gderemonta.net/proektirovanie/</loc>
-  <lastmod>2017-02-17T13:58:21+00:00</lastmod>
+  <lastmod>2017-02-27T14:09:52+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gderemonta.net/obogrev-trub-vodosnabzheniya-kanalizacii/</loc>
-  <lastmod>2017-02-17T13:58:21+00:00</lastmod>
+  <lastmod>2017-02-27T14:09:52+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gderemonta.net/obogrev-stupeney-ploshchadok-pandusov/</loc>
+  <lastmod>2017-02-27T14:09:52+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gderemonta.net/obogrev-krovli-vodostokov-zhelobov/</loc>
+  <lastmod>2017-02-27T14:09:52+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gderemonta.net/obogrev-promyshlennyh-obektov/</loc>
+  <lastmod>2017-02-27T14:09:52+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gderemonta.net/obogrev-grunta-teplic/</loc>
+  <lastmod>2017-02-27T14:09:52+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gderemonta.net/montazh-rezistivnogo-kabelya-greyushchih-matov/</loc>
-  <lastmod>2017-02-17T13:58:21+00:00</lastmod>
+  <lastmod>2017-02-27T14:09:52+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gderemonta.net/montazh-greyushih-sterzhnej-ekoondol/</loc>
+  <lastmod>2017-02-27T14:09:52+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gderemonta.net/montazh-infrakrasnoy-greyushchey-plyonki/</loc>
+  <lastmod>2017-02-27T14:09:52+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gderemonta.net/montazh-vodyanogo-teplogo-pola/</loc>
+  <lastmod>2017-02-27T14:09:52+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gderemonta.net/vodosnabzhenie-zagorodnogo-doma/</loc>
+  <lastmod>2017-02-27T14:09:52+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gderemonta.net/ustanovka-santehnicheskogo-oborudovaniya/</loc>
+  <lastmod>2017-02-27T14:09:52+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gderemonta.net/montazh-kotelnyh-vodonagrevatelej/</loc>
+  <lastmod>2017-02-27T14:09:52+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gderemonta.net/ustanovka-skvazhinnogo-nasosa/</loc>
+  <lastmod>2017-02-27T14:09:52+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
