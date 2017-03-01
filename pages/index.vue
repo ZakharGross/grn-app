@@ -9,6 +9,8 @@
 				  			<div class="column">	  				
 				  				<div class="title is-green">Привет! Меня зовут Захар Гросс.</div>
 				  				<div class="line-green"></div>
+				  				<br/>
+			  					<img width="172px" src="~assets/img/zakhar-gross-photo.png" alt="Gross photo"/>
 								</div>	  				
 				  			<div class="column">
 				  				<p>Я не профессиональный строитель, но выполнил большое количество работ по монтажу и сделал огромное множество проектов по ремонту. Благодаря этому, получил колоссальный опыт в сфере строительства.</p>
@@ -77,12 +79,16 @@
 									<div class="column is-full-mobile">
 										<app-page-menu/>
 									</div>
-									<div class="column is-full-mobile middle-aligned">
+									<div class="column is-full-mobile">
 										<div class="bordered">
 											<h4>&mdash; Есть вопросы по моей работе и услугам?</h4>
 											<h4>&mdash; Оставьте свой номер, я перезвоню вам!</h4>
 											<br/>
 											<app-order-form/>
+										</div>
+										<div class="bordered is-border-gray">
+											<h3>#горестроители</h3>
+											<p>Я много езжу по объектам и встречаю всевозможные «строительные ляпы». <a href="/gorestroiteli/">Посмотрите, как это бывает</a> <span class="icon"><i class="fa fa-angle-right"></i></span></p>
 										</div>
 									</div>
 								</div>

@@ -8,14 +8,14 @@
               <div class="columns">
                 <div class="column">
                   <h1 class="title is-green">Контакты для связи</h1>
+                  <p>
+                    <span class="text-large">Телефон: <a href="tel:+78124261920">+7 (812) 426-19-20</a></span><br/>
+                    <span class="text-large">Почта: <a href="mailto:4261920@mail.ru">4261920@mail.ru</a></span>
+                  </p>
                 </div>            
                 <div class="column">
                   <p><strong>Адрес офиса:</strong></p>
-                  <p>197374, Россия, г. Санкт-Петербург, ул. Планерная, д. 15,<br/>БЦ «СетАвто», офис 211 (2-й этаж, вход с торца).</p>
-                  <p>
-                    <a href="tel:+78124261920" class="text-large">+7 (812) 426-19-20</a><br/>
-                    <a href="mailto:4261920@mail.ru" class="text-large">4261920@mail.ru</a>
-                  </p>
+                  <p>197374, Россия, г. Санкт-Петербург, ул. Планерная, д. 15,<br/>БЦ «СетАвто», офис 211 (2-й этаж, вход с торца).</p>                  
                 </div>
               </div>
             </div>
