@@ -81,11 +81,15 @@
       <div class="content">
         <section class="hero is-small">
           <div class="hero-body">
-            <h2 class="title has-text-centered">Примеры работ, выполненные проекты<br/>#обогревгрунта</h2>
+            <h2 class="title has-text-centered">Примеры работ, выполненные проекты<br/>#обогревгрунта #обогревтеплиц</h2>
             <br/>
             <br/>
             <br/>
             <div class="columns is-mobile is-multiline" id="instafeed"></div>
+            <br/>
+            <div class="has-text-centered">
+              <button class="is-medium is-info is-outlined button" id="load-more">Посмотреть ещё!</button>
+            </div>
           </div>
         </section>
       </div>
@@ -99,6 +103,8 @@
   if (process.BROWSER_BUILD) {
     const Instafeed = require('instafeed.js');
     const moment = require('moment');
+
+    let loadButton = document.getElementById('load-more');
 
     let feed = new Instafeed({
       get: 'user',
@@ -121,8 +127,19 @@
           image.caption.text = image.caption.text.slice(0, 150) + '...';
         }
         // Return array.
-        return image.tags.indexOf('обогревгрунта', 'стройка') > 0;
+        if (image.tags.indexOf('обогревгрунта') >= 0 || image.tags.indexOf('обогревтеплиц') >= 0 || image.tags.indexOf('гдеремонтанет') >= 0) {
+          return image;
+        }
+      },
+      after: function() {
+        if (!this.hasNext()) {
+          loadButton.classList.add('is-hidden-mobile', 'is-hidden-tablet', 'is-hidden-desktop');
+        }
       }
+    });
+
+    loadButton.addEventListener('click', function() {
+      feed.next();
     });
     
     feed.run();

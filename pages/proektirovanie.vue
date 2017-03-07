@@ -51,11 +51,14 @@
                         <tr><td>Чертёж дома до 100 м<sup>2</sup></td><td>5000 руб./проект</td></tr>
                         <tr><td>Чертёж дома до 200 м<sup>2</sup></td><td>8000 руб./проект</td></tr>
                         <tr><td>Проект кровли, водостоков и автоматики</td><td>от 5000 руб./проект</td></tr>
-                        <tr><td>Проект водяного тёплого пола (при условии монтажа)</td><td>бесплатно</td></tr>
+                        <tr><td>Проект <a href="/montazh-vodyanogo-teplogo-pola/">водяного тёплого пола</a> (при условии монтажа)</td><td>бесплатно</td></tr>
                       </tbody>
                     </table>
                   </div>
-                  <div class="column is-full-mobile middle-aligned">
+                  <div class="column is-full-mobile">
+                    <div class="bordered is-border-gray">
+                      <p><a href="/downloads/sample-project.pdf" target="_blank">Посмотреть пример полностью готового проекта с расчётом теплопотерь, который я для Вас сделаю</a>&nbsp;<span class="icon"><i class="fa fa-angle-right"></i></span></p>
+                    </div>
                     <div class="bordered">
                       <h4>&mdash; Есть ещё вопросы или готовы сделать заказ?</h4>
                       <h4>&mdash; Оставьте свой номер, я перезвоню вам!</h4>
@@ -79,6 +82,10 @@
             <br/>
             <br/>
             <div class="columns is-mobile is-multiline" id="instafeed"></div>
+            <br/>
+            <div class="has-text-centered">
+              <button class="is-medium is-info is-outlined button" id="load-more">Посмотреть ещё!</button>
+            </div>
           </div>
         </section>
       </div>
@@ -93,12 +100,14 @@
     const Instafeed = require('instafeed.js');
     const moment = require('moment');
 
+    let loadButton = document.getElementById('load-more');
+
     let feed = new Instafeed({
       get: 'user',
       userId: 4509914945,
       accessToken: '4509914945.ba4c844.af1348fddd874088b357394b1bc5dfca',
       resolution: 'standard_resolution',
-      limit: 8,
+      //limit: 8,
       template: '<div class="column is-one-quarter-desktop is-half-tablet is-full-mobile">' +
         '<figure class="image is-square"><img style="border-radius:3px;" src="{{image}}" alt="image {{model.created_time}}"/></figure>' +
         '<p><strong>{{model.created_time}}</strong><br/>{{model.caption.text}}</p>' +
@@ -114,8 +123,19 @@
           image.caption.text = image.caption.text.slice(0, 150) + '...';
         }
         // Return array.
-        return image.tags.indexOf('проект') > 0;
+        if (image.tags.indexOf('проект') >= 0 || image.tags.indexOf('гдеремонтанет') >= 0) {
+          return image;
+        }
+      },
+      after: function() {
+        if (!this.hasNext()) {
+          loadButton.classList.add('is-hidden-mobile', 'is-hidden-tablet', 'is-hidden-desktop');
+        }
       }
+    });
+
+    loadButton.addEventListener('click', function() {
+      feed.next();
     });
 
     feed.run();

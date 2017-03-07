@@ -44,13 +44,14 @@
                     <h2>Стоимость услуг</h2>
                     <table class="table is-striped">
                       <tbody>
+                        <tr><td><span class="tag is-success is-hidden-mobile">Новинка!</span>&nbsp;&nbsp;Монтаж тёплого пола на фольгированый<br/>полистерол (пенополситерол фольгиованый, трубы, опресовка системы)</td><td>400&nbsp;руб./м<sup>2</sup></td></tr>
                         <tr><td>Монтаж тёплого пола<br/>(пенополистрол, пленка, труба, опресовка<br/>системы)</td><td>450&nbsp;руб./м<sup>2</sup></td></tr>
                         <tr><td>Монтаж тёплого пола сухая система (пенополситерол,<br/>теплораспредилительные пластины,<br/>трубы, опресовка системы)</td><td>950&nbsp;руб./м<sup>2</sup></td></tr>
-                        <tr><td><span class="tag is-success is-hidden-mobile">Новинка!</span>&nbsp;&nbsp;Монтаж тёплого пола на фольгированый<br/>полистерол (пенополситерол фольгиованый, трубы, опресовка системы)</td><td>400&nbsp;руб./м<sup>2</sup></td></tr>
                         <tr><td>Укладка листов ГВЛ (минимум 20 мм)</td><td>150&nbsp;руб./м<sup>2</sup></td></tr>
                         <tr><td>Установка коллектора ТП (пара)</td><td>2500&nbsp;руб./шт.</td></tr>
                         <tr><td>Прокладка магистралей из котельной к коллектору</td><td>200&nbsp;руб./пог.м</td></tr>
                         <tr><td>Монтаж термостатов (установка и подключение)</td><td>2500&nbsp;руб./шт.</td></tr>
+                        <tr><td>Штробление (под гофротрубу)</td><td>110 руб./пог.м</td></tr>
                         <tr><td>Прокладка провода на термостаты ПВС 3х0.75<br/>в защитной гофре-трубе</td><td>20&nbsp;руб./пог.м</td></tr>
                         <tr><td>Монтаж полусухой стяжки</td><td>550&nbsp;руб./пог.м</td></tr>
                         <tr><td>Транспортные расходы (в черте города)</td><td>400&nbsp;руб./поездка</td></tr>
@@ -67,11 +68,14 @@
                       <li>Я точно знаю какой высоты должен быть утеплитель на первых этажах и перекрытиях, чтобы было тепло;</li>
                       <li>Я не буду предлагать Вам теплоотражающую подложку, так как она бесполезна и долго не прослужит в стяжке.</li>
                     </ul>
+                    <div class="bordered less-margin is-border-gray">
+                      <p><a href="/downloads/sample-project.pdf" target="_blank">Посмотреть пример полностью готового проекта с расчётом теплопотерь, который я для Вас сделаю</a>&nbsp;<span class="icon"><i class="fa fa-angle-right"></i></span></p>
+                    </div>
                     <h3>Скидки от моих партнёров</h3>
                     <ul>
                       <li>СТД Петрович — максимальная скидка по золотой карте</li>
                       <li>Thermotech — 15% от розницы</li>
-                    </ul>
+                    </ul>                    
                     <div class="bordered">
                       <h4>&mdash; Есть ещё вопросы или готовы сделать заказ?</h4>
                       <h4>&mdash; Оставьте свой номер, я перезвоню вам!</h4>
@@ -90,11 +94,15 @@
       <div class="content">
         <section class="hero is-small">
           <div class="hero-body">
-            <h2 class="title has-text-centered">Примеры работ, выполненные проекты<br/>#монтажводяногопола</h2>
+            <h2 class="title has-text-centered">Примеры работ, выполненные проекты<br/>#водянойтеплыйпол</h2>
             <br/>
             <br/>
             <br/>
             <div class="columns is-mobile is-multiline" id="instafeed"></div>
+            <br/>
+            <div class="has-text-centered">
+              <button class="is-medium is-info is-outlined button" id="load-more">Посмотреть ещё!</button>
+            </div>
           </div>
         </section>
       </div>
@@ -109,12 +117,14 @@
     const Instafeed = require('instafeed.js');
     const moment = require('moment');
 
+    let loadButton = document.getElementById('load-more');
+
     let feed = new Instafeed({
       get: 'user',
       userId: 4509914945,
       accessToken: '4509914945.ba4c844.af1348fddd874088b357394b1bc5dfca',
       resolution: 'standard_resolution',
-      limit: 8,
+      //limit: 8,
       template: '<div class="column is-one-quarter-desktop is-half-tablet is-full-mobile">' +
         '<figure class="image is-square"><img style="border-radius:3px;" src="{{image}}" alt="image {{model.created_time}}"/></figure>' +
         '<p><strong>{{model.created_time}}</strong><br/>{{model.caption.text}}</p>' +
@@ -130,8 +140,19 @@
           image.caption.text = image.caption.text.slice(0, 150) + '...';
         }
         // Return array.
-        return image.tags.indexOf('монтажводяногопола', 'стройка') > 0;
+        if (image.tags.indexOf('водянойтеплыйпол') >= 0 || image.tags.indexOf('водянойпол') >= 0 || image.tags.indexOf('гдеремонтанет') >= 0) {
+          return image;
+        }
+      },
+      after: function() {
+        if (!this.hasNext()) {
+          loadButton.classList.add('is-hidden-mobile', 'is-hidden-tablet', 'is-hidden-desktop');
+        }
       }
+    });
+
+    loadButton.addEventListener('click', function() {
+      feed.next();
     });
 
     feed.run();

@@ -146,6 +146,11 @@ ul.list-category li a {
 .is-border-gray {
   border: 1px dashed rgb(157,157,157);
 }
+.bordered.less-margin {
+  margin-top: 2rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
 .middle-aligned {
   display: flex;
   justify-content: center;

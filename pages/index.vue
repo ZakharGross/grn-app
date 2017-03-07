@@ -87,8 +87,8 @@
 											<app-order-form/>
 										</div>
 										<div class="bordered is-border-gray">
-											<h3>#горестроители</h3>
-											<p>Я много езжу по объектам и встречаю всевозможные «строительные ляпы». <a href="/gorestroiteli/">Посмотрите, как это бывает</a> <span class="icon"><i class="fa fa-angle-right"></i></span></p>
+											<h3>#когдапрорабмудак</h3>
+											<p>Я много езжу по объектам и встречаю всевозможные «строительные ляпы». <a href="/gorestroiteli/">Посмотрите, как это бывает</a>&nbsp;<span class="icon"><i class="fa fa-angle-right"></i></span></p>
 										</div>
 									</div>
 								</div>
