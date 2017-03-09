@@ -33,28 +33,36 @@
                     <h2>Принципы моей работы</h2>
                     <ul>
                       <li>Только проверенный мной брэнды труб из полипропилена или метала;</li>
-                      <li>Обязательный монтаж терморегулятора;</li>
                       <li>Я даю 1 год настоящей гарантии на все свои работы.</li>
                     </ul>
                     <h2>Стоимость услуг</h2>
-                    <!--<table class="table is-striped">
+                    <table class="table is-striped">
                       <tbody>
-                        <tr><td>Монтаж инфракрасной плёнки</td><td>100 руб./пог.м</td></tr>
-                        <tr><td>Настил подложки</td><td>50 руб./м<sup>2</sup></td></tr>
-                        <tr><td>Штробление</td><td>200 руб./пог.м</td></tr>
-                        <tr><td>Монтаж терморегулятора</td><td>500 руб./шт.</td></tr>
-                        <tr><td>Укладка плитки на пол</td><td>800 руб./м<sup>2</sup></td></tr>
-                        <tr><td>Укладка ламинат</td><td>300 руб./м<sup>2</sup></td></tr>
-                        <tr><td>Транспортные расходы</td><td>600 руб./поездка</td></tr>
+                        <tr><td>Точка водопровода (ХВС или ГВС)</td><td>от 1000 руб.</td></tr>
+                        <tr><td>Инсталляция</td><td>от 2500 руб.</td></tr>
+                        <tr><td>Унитаз</td><td>от 1800 руб.</td></tr>
+                        <tr><td>Умывальник</td><td>от 1500 руб.</td></tr>
+                        <tr><td>Ванна</td><td>от 2000 руб.</td></tr>
+                        <tr><td>Смеситель</td><td>от 800 руб.</td></tr>
+                        <tr><td>Полотенцесушитель, радиатор</td><td>от 2800 руб.</td></tr>
+                        <tr><td>Душевая стойка</td><td>от 1500 руб.</td></tr>
+                        <tr><td>Фильтр питьевой</td><td>от 1500 руб.</td></tr>
+                        <tr><td>Канализация (точка)</td><td>от 1200 руб.</td></tr>
+                        <tr><td>Штроба под воду</td><td>от 250 руб./м</td></tr>
+                        <tr><td>Штроба под канализацию</td><td>от 400 руб./м</td></tr>
+                        <tr><td>Транспортные расходы (в черте города)</td><td>400 руб./поездка</td></tr>
+                        <tr><td>Транспортные расходы (по Лен. обл.)</td><td>от 600 руб./поездка</td></tr>
+                        <!--<tr><td>Разнорабочий (по необходимости)</td><td>2000 руб./день</td></tr>-->
                       </tbody>
-                    </table>-->
+                    </table>
                   </div>
                   <div class="column is-full-mobile">
                     <h3>Полезные советы <span class="tag is-medium is-success">Бонус!</span></h3>
                     <ul>
-                      <li>Я точно знаю какого размера труба лучше, в вашем конкретном случае;</li>
-                      <li>Обязательно одеваю утеплитель на трубы.</li>
+                      <li>Если вы надолго покидаете дом (особенно в холодный период), то не забудьте максиально слить воду изо всех труб;</li>
+                      <li>Обязательно одеваю утеплитель на трубы (идущие по улице).</li>
                     </ul>
+                    <h3>Скидки от моих партнёров</h3>
                     <ul>
                       <li>СТД Петрович — максимальная скидка по золотой карте</li>
                     </ul>
@@ -106,7 +114,8 @@
       userId: 4509914945,
       accessToken: '4509914945.ba4c844.af1348fddd874088b357394b1bc5dfca',
       resolution: 'standard_resolution',
-      //limit: 8,
+      limit: 60,
+      sortBy: 'most-recent',
       template: '<div class="column is-one-quarter-desktop is-half-tablet is-full-mobile">' +
         '<figure class="image is-square"><img style="border-radius:3px;" src="{{image}}" alt="image {{model.created_time}}"/></figure>' +
         '<p><strong>{{model.created_time}}</strong><br/>{{model.caption.text}}</p>' +
@@ -122,9 +131,7 @@
           image.caption.text = image.caption.text.slice(0, 150) + '...';
         }
         // Return array.
-        if (image.tags.indexOf('сантехника') >= 0 || image.tags.indexOf('гдеремонтанет') >= 0) {
-          return true;
-        }
+        return image.tags.indexOf('сантехника') >= 0;
       },
       after: function() {
         if (!this.hasNext()) {

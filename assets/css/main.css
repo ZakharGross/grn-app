@@ -188,7 +188,7 @@ ul.list-category li a {
   background-position: top center;
   background-repeat: no-repeat;
 }
-.service-proekt_-background {
+.service-proekt-background {
   background-image: url('~assets/img/page-service-proekt.jpg');
   background-size: cover;
   background-position: top center;
@@ -206,6 +206,12 @@ ul.list-category li a {
   background-position: center;
   background-repeat: no-repeat;
 }
+.service-obogrev-trub-background {
+  background-image: url('~assets/img/page-service-obogrev-trub.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .service-obogrev-promka-background {
   background-image: url('~assets/img/page-service-obogrev-promka.jpg');
   background-size: cover;
@@ -218,10 +224,10 @@ ul.list-category li a {
   background-position: center;
   background-repeat: no-repeat;
 }
-.service-montazh-ondol_-background {
+.service-montazh-ondol-background {
   background-image: url('~assets/img/page-service-montazh-ondol.jpg');
   background-size: cover;
-  background-position: top center;
+  background-position: bottom center;
   background-repeat: no-repeat;
 }
 .service-montazh-rezistiv-background {
@@ -248,7 +254,7 @@ ul.list-category li a {
   background-position: top center;
   background-repeat: no-repeat;
 }
-.service-santeh-vodosnab_-background {
+.service-santeh-vodosnab-background {
   background-image: url('~assets/img/page-service-santeh-vodosnab.jpg');
   background-size: cover;
   background-position: top center;

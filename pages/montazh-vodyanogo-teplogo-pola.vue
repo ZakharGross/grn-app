@@ -64,7 +64,8 @@
                     <ul>
                       <li>Я точно знаю какой высоты должна быть стяжка и почему;</li>
                       <li>Я точно знаю почему лучше укладывать трубы на сетку, а не «бобышки»;</li>
-                      <li>Я точно знаю, какой теплоноситель лучше залить именно Вам;</li>                      
+                      <li>Я точно знаю, какой теплоноситель лучше залить именно Вам;</li>
+                      <li>Даже у крепления трубы к сетке (с помощью хомута) есть хитрости&nbsp;&mdash; нельзя крепить её на месте сгиба;</li>
                       <li>Я точно знаю какой высоты должен быть утеплитель на первых этажах и перекрытиях, чтобы было тепло;</li>
                       <li>Я не буду предлагать Вам теплоотражающую подложку, так как она бесполезна и долго не прослужит в стяжке.</li>
                     </ul>
@@ -124,7 +125,8 @@
       userId: 4509914945,
       accessToken: '4509914945.ba4c844.af1348fddd874088b357394b1bc5dfca',
       resolution: 'standard_resolution',
-      //limit: 8,
+      limit: 60,
+      sortBy: 'most-recent',
       template: '<div class="column is-one-quarter-desktop is-half-tablet is-full-mobile">' +
         '<figure class="image is-square"><img style="border-radius:3px;" src="{{image}}" alt="image {{model.created_time}}"/></figure>' +
         '<p><strong>{{model.created_time}}</strong><br/>{{model.caption.text}}</p>' +
@@ -132,17 +134,15 @@
       filter: function(image) {
         // Change created_time.
         moment.locale('ru');
-        var timestamp = new Date(image.created_time);
-        var dateString = moment.unix(image.created_time).format('YYYY-MM-DD HH:mm');
+        let timestamp = new Date(image.created_time);
+        let dateString = moment.unix(image.created_time).format('YYYY-MM-DD HH:mm');
         image.created_time = moment(dateString).startOf('minute').fromNow();
         // Change caption.
         if (image.caption.text.length > 150) {
           image.caption.text = image.caption.text.slice(0, 150) + '...';
         }
         // Return array.
-        if (image.tags.indexOf('водянойтеплыйпол') >= 0 || image.tags.indexOf('водянойпол') >= 0 || image.tags.indexOf('гдеремонтанет') >= 0) {
-          return image;
-        }
+        return image.tags.indexOf('водянойтеплыйпол') >= 0;
       },
       after: function() {
         if (!this.hasNext()) {

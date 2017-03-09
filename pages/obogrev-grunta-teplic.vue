@@ -81,7 +81,7 @@
       <div class="content">
         <section class="hero is-small">
           <div class="hero-body">
-            <h2 class="title has-text-centered">Примеры работ, выполненные проекты<br/>#обогревгрунта #обогревтеплиц</h2>
+            <h2 class="title has-text-centered">Примеры работ, выполненные проекты<br/>#обогревгрунта</h2>
             <br/>
             <br/>
             <br/>
@@ -111,7 +111,8 @@
       userId: 4509914945,
       accessToken: '4509914945.ba4c844.af1348fddd874088b357394b1bc5dfca',
       resolution: 'standard_resolution',
-      limit: 8,
+      limit: 60,
+      sortBy: 'most-recent',
       template: '<div class="column is-one-quarter-desktop is-half-tablet is-full-mobile">' +
         '<figure class="image is-square"><img style="border-radius:3px;" src="{{image}}" alt="image {{model.created_time}}"/></figure>' +
         '<p><strong>{{model.created_time}}</strong><br/>{{model.caption.text}}</p>' +
@@ -127,9 +128,7 @@
           image.caption.text = image.caption.text.slice(0, 150) + '...';
         }
         // Return array.
-        if (image.tags.indexOf('обогревгрунта') >= 0 || image.tags.indexOf('обогревтеплиц') >= 0 || image.tags.indexOf('гдеремонтанет') >= 0) {
-          return image;
-        }
+        return image.tags.indexOf('обогревгрунта') >= 0;
       },
       after: function() {
         if (!this.hasNext()) {
