@@ -15,7 +15,7 @@
 								</div>	  				
 				  			<div class="column">
 				  				<p>Монтаж водяного тёплого пола очень серьезное направление, но как ни странно у некоторых он поставлен на поток, а другие вообще сами пытаются смонтировать, зачастую не понимая цену ошибки. У меня бригада профессиональных монтажников, которые более 10 лет занимаются монтажом водяных тёплых полов, но и они не могут сказать, что все досконально знают.</p>
-                  <p>Я бесплатно сделаю вам проект монтажа, вам только нужно предоставить чертёж дома. Цена монтажа у меня средне-городская, а вот качество работы на высшем уровне! Обещаю вам, что Вы получите эстетическое удовольствие от моей работы.</p>
+                  <p>Я бесплатно сделаю проект монтажа, вам только нужно предоставить чертёж дома. Цена монтажа у меня средне-городская, а вот качество работы на высшем уровне! Обещаю вам, что Вы получите эстетическое удовольствие от моей работы.</p>
                   <p>Также могу сделать водяной теплый пол «под ключ» с обвязкой котельной, автоматикой и так далее.</p>
 				  			</div>
 				  		</div>
@@ -24,6 +24,36 @@
 		  	</div>
 	  	</div>
   	</div>
+    <div class="container">
+      <div class="content">
+        <section class="hero is-medium">
+          <div class="hero-body">
+            <div class="menu-page-app">
+              <div class="columns has-text-centered">
+                <div class="column is-full-mobile">
+                  <img class="image is-128x128" src="~assets/img/viezd.svg" alt="Шаг 1"/><br/>Выезд сметчика на объект бесплатно
+                </div>
+                <div class="column is-full-mobile">
+                  <img class="image is-128x128" src="~assets/img/dogovor.svg" alt="Шаг 2"/><br/>Предварительная смета за 1 рабочий день
+                </div>
+                <div class="column is-full-mobile">
+                  <img class="image is-128x128" src="~assets/img/proektirovanie.svg" alt="Шаг 3"/><br/>Предоплата 20 тыс. руб., выполнение проекта до 2х недель
+                </div>
+                <div class="column is-full-mobile">
+                  <img class="image is-128x128" src="~assets/img/oplata-50.svg" alt="Шаг 4"/><br/>Подписание договора и оплата материалов
+                </div>
+                <div class="column is-full-mobile">
+                  <img class="image is-128x128" src="~assets/img/money.svg" alt="Шаг 5"/><br/>Оплата 50% выполненных работ
+                </div>
+                <div class="column is-full-mobile">
+                  <img class="image is-128x128" src="~assets/img/oplata-100.svg" alt="Шаг 6"/><br/>Подписание акта выполненных работ, финальный расчёт
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
     <div class="is-gray">
       <div class="container">
         <div class="content">

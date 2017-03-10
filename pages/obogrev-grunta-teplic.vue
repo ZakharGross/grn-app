@@ -22,6 +22,36 @@
 		  	</div>
 	  	</div>
   	</div>
+    <div class="container">
+      <div class="content">
+        <section class="hero is-medium">
+          <div class="hero-body">
+            <div class="menu-page-app">
+              <div class="columns has-text-centered">
+                <div class="column is-full-mobile">
+                  <img class="image is-128x128" src="~assets/img/viezd.svg" alt="Шаг 1"/><br/>Бесплатный выезд сметчика на объект                  
+                </div>
+                <div class="column is-full-mobile">
+                  <img class="image is-128x128" src="~assets/img/dogovor.svg" alt="Шаг 2"/><br/>Составление предварительной сметы за 1 рабочий день
+                </div>
+                <div class="column is-full-mobile">
+                  <img class="image is-128x128" src="~assets/img/proektirovanie.svg" alt="Шаг 3"/><br/>При необходимости, изготовление проекта
+                </div>
+                <div class="column is-full-mobile">
+                  <img class="image is-128x128" src="~assets/img/oplata-50.svg" alt="Шаг 4"/><br/>Подписание договора и оплата материалов
+                </div>
+                <div class="column is-full-mobile">
+                  <img class="image is-128x128" src="~assets/img/money.svg" alt="Шаг 5"/><br/>Оплата 50% выполненных работ
+                </div>
+                <div class="column is-full-mobile">
+                  <img class="image is-128x128" src="~assets/img/oplata-100.svg" alt="Шаг 6"/><br/>Подписание акта выполненных работ, финальный расчёт
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
     <div class="is-gray">
       <div class="container">
         <div class="content">
@@ -60,8 +90,8 @@
                     <h3>Скидки от моих партнёров</h3>
                     <ul>
                       <li>СТД Петрович — максимальная скидка по золотой карте</li>
-                      <li>FINE Korea — 15% от розницы</li>
-                      <li>E&S Tec — 15% от розницы</li>
+                      <li>FINE Korea — 10% от розницы</li>
+                      <li>E&S Tec — 10% от розницы</li>
                     </ul>
                     <div class="bordered">
                       <h4>&mdash; Есть ещё вопросы или готовы сделать заказ?</h4>

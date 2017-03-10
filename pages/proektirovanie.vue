@@ -13,7 +13,7 @@
 				  				<h1 class="title is-green">Комплексное проектирование</h1>
 								</div>	  				
 				  			<div class="column">
-				  				<p>У Вас нет чертежа дома, крыши и так далее, а нужно рассчитать тепло потери или точное количества строительного материала? Не проблема, мы за 4 рабочих дней начертим. Потратив небольшие деньги на чертёж, вы в дальнейшем экономите больше.</p>
+				  				<p>У Вас нет чертежа дома, крыши и так далее, а нужно рассчитать тепло потери или точное количества строительного материала? Не проблема, мы за 5 рабочих дней начертим. Потратив небольшие деньги на чертёж, Вы в дальнейшем&nbsp;&mdash; экономите больше.</p>
 				  			</div>
 				  		</div>
 			  		</div>
@@ -21,6 +21,27 @@
 		  	</div>
 	  	</div>
   	</div>
+    <div class="container">
+      <div class="content">
+        <section class="hero is-medium">
+          <div class="hero-body">
+            <div class="menu-page-app">
+              <div class="columns has-text-centered">
+                <div class="column is-one-quarter is-full-mobile is-offset-2">
+                  <img class="image is-128x128" src="~assets/img/money.svg" alt="Шаг 1"/><br/>Оплата работ по проектированию и транспортные расходы
+                </div>
+                <div class="column is-one-quarter is-full-mobile">
+                  <img class="image is-128x128" src="~assets/img/viezd.svg" alt="Шаг 2"/><br/>Выезд проектировщика на объект, произведение замеров
+                </div>                
+                <div class="column is-one-quarter is-full-mobile">
+                  <img class="image is-128x128" src="~assets/img/oplata-100.svg" alt="Шаг 3"/><br/>Спустя 5 дней&nbsp;&mdash; вы получаете полностью готовый проект
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
     <div class="is-gray">
       <div class="container">
         <div class="content">
@@ -37,14 +58,6 @@
                       <li>Толщина утеплителя</li>
                       <li>Толщина перекрытий и его материал</li>
                     </ul>
-                    <p>На основании Вашего чертежа дома мы сделаем Вам проект водяных тёплых полов бесплатно. В проект <a href="/montazh-vodyanogo-teplogo-pola/">тёплого пола</a> входит:</p>
-                    <ul>
-                      <li>Расчёт теплопотерь</li>
-                      <li>Раскладка труб в помещении</li>
-                      <li>Размещение автоматики (терморегуляторов)</li>
-                      <li>Организация котельной</li>
-                      <li>Размещение коллекторов и магистралей</li>
-                    </ul>
                     <h2>Стоимость услуги</h2>
                     <table class="table is-striped">
                       <tbody>
@@ -52,11 +65,25 @@
                         <tr><td>Чертёж дома до 200 м<sup>2</sup></td><td>8000 руб./проект</td></tr>
                         <tr><td>Проект кровли, водостоков и автоматики</td><td>от 5000 руб./проект</td></tr>
                         <tr><td>Проект <a href="/montazh-vodyanogo-teplogo-pola/">водяного тёплого пола</a> (при условии монтажа)</td><td>бесплатно</td></tr>
+                        <tr><td>Транспортные расходы (в черте города)</td><td>400 руб./поездка</td></tr>
+                        <tr><td>Транспортные расходы (по Лен. обл.)</td><td>от 600 руб./поездка</td></tr>
                       </tbody>
-                    </table>
+                    </table>                                       
                   </div>
                   <div class="column is-full-mobile">
-                    <div class="bordered is-border-gray">
+                    <div class="bordered is-border-gray less-margin">
+                      <p>На основании чертежа дома, я сделаю для Вас проект <a href="/montazh-vodyanogo-teplogo-pola/">водяных тёплых полов</a> бесплатно. В такой проект будут входить:</p>
+                      <ul>
+                        <li>Разработка графических материалов технического решения систем напольного отопления (снеготаяния):
+                          <ul>
+                            <li>Схемы прокладки магистральных трубопроводов</li>
+                            <li>Схемы укладки демпферной ленты</li>
+                            <li>Планы раскладки контуров системы напольного отопления (снеготаяния)</li>
+                            <li>Схемы расстановки оборудования (автоматики, узлов, механизмов и так далее)</li>                          
+                          </ul>
+                        </li>
+                        <li>Разработка спецификации оборудования и материалов системы напольного отопления (снеготаяния).</li>
+                      </ul>                    
                       <p><a href="/downloads/sample-project.pdf" target="_blank">Посмотреть пример полностью готового проекта с расчётом теплопотерь, который я для Вас сделаю</a>&nbsp;<span class="icon"><i class="fa fa-angle-right"></i></span></p>
                     </div>
                     <div class="bordered">
@@ -64,7 +91,7 @@
                       <h4>&mdash; Оставьте свой номер, я перезвоню вам!</h4>
                       <br/>
                       <app-order-form/>
-                    </div>
+                    </div> 
                   </div>
                 </div>
               </div>
