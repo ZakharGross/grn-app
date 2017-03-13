@@ -1,25 +1,12 @@
 <template>
 	<div class="offer">
-    <div class="columns">
-      <div class="column is-10 is-offset-1">
-        <div class="columns">
-          <div class="column">
-            <h4>&mdash; Есть вопросы или уже готовы сделать заказ?</h4>
-            <h4>&mdash; Оставьте свой номер, я перезвоню Вам!</h4>
-            <img class="image is-256x256 is-hidden-mobile" src="~assets/img/arrow.svg" alt="arrow"/>
-          </div>
-          <div class="column">
-            <form class="form" action="" method="POST">
-              <p>
-                <input v-model="client_name" name="client_name" placeholder="Ваше имя *" type="text" required="" /><br/>
-                <input v-mask="'+7 (###) ###-##-##'" v-model="client_phone" name="client_phone" placeholder="Телефон для связи *" type="tel" required="" />
-              </p>
-              <p><button v-on:click.prevent="sendOffer()" class="button is-warning is-medium">Отправить заявку!</button></p>
-            </form>
-          </div>
-        </div>		
-      </div>
-    </div>
+    <form class="form" action="" method="POST">
+      <p>
+        <input v-model="client_name" name="client_name" placeholder="Ваше имя *" type="text" required="" /><br/>
+        <input v-mask="'+7 (###) ###-##-##'" v-model="client_phone" name="client_phone" placeholder="Телефон для связи *" type="tel" required="" />
+      </p>
+      <p><button v-on:click.prevent="sendOffer()" class="button is-warning is-medium">Отправить заявку!</button></p>
+    </form>
   </div>
 </template>
 
@@ -45,7 +32,7 @@
             if (process.BROWSER_BUILD) {
               const swal = require('sweetalert2');              
               swal('Запрос отправлен!', 'Спасибо! Мы свяжемся с вами в ближайшее время.', 'success');
-              yaCounter42715709.reachGoal('call');
+              yaCounter42715709.reachGoal('front-call');
               setTimeout(function() {
                 swal.close();
               }, 2000);

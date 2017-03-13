@@ -56,19 +56,12 @@
     <div class="is-gray">
       <div class="container">
         <div class="content">
-          <section class="hero is-medium">
+          <section class="hero is-small">
             <div class="hero-body">
               <div class="menu-page-app">
                 <div class="columns">
                   <div class="column is-full-mobile">
-                    <h2>Принципы моей работы</h2>
-                    <ul>
-                      <li>Только проверенный мной брэнды труб из полипропилена или метала;</li>
-                      <li>Коллектора, группы безопасности и прочее — только проверенных изготовителей;</li>
-                      <li>В своей работе использую дорогой качественный инструмент;</li>
-                      <li>Я даю 1 год настоящей гарантии на все свои работы.</li>
-                    </ul>
-                    <h2>Стоимость услуг</h2>
+                    <h2>Стоимость основных работ</h2>
                     <!--<table class="table is-striped">
                       <tbody>
                         <tr><td>Монтаж инфракрасной плёнки</td><td>100 руб./пог.м</td></tr>
@@ -82,6 +75,13 @@
                     </table>-->
                   </div>
                   <div class="column is-full-mobile">
+                    <h2>Принципы моей работы</h2>
+                    <ul>
+                      <li>Только проверенный мной брэнды труб из полипропилена или метала;</li>
+                      <li>Коллектора, группы безопасности и прочее — только проверенных изготовителей;</li>
+                      <li>В своей работе использую дорогой качественный инструмент;</li>
+                      <li>Я даю 1 год настоящей гарантии на все свои работы.</li>
+                    </ul>
                     <h3>Полезные советы <span class="tag is-medium is-success">Бонус!</span></h3>
                     <ul>
                       <li>Я точно знаю какие трубы Вам нужны и их диаметр.</li>
@@ -90,15 +90,20 @@
                     <ul>
                       <li>СТД Петрович — максимальная скидка по золотой карте</li>
                     </ul>
-                    <div class="bordered">
-                      <h4>&mdash; Есть ещё вопросы или готовы сделать заказ?</h4>
-                      <h4>&mdash; Оставьте свой номер, я перезвоню вам!</h4>
-                      <br/>
-                      <app-order-form/>
-                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="is-order-form">
+      <div class="container">
+        <div class="content">
+          <section class="hero is-medium">
+            <div class="hero-body">
+              <app-order-form/>
             </div>
           </section>
         </div>
@@ -108,7 +113,8 @@
       <div class="content">
         <section class="hero is-small">
           <div class="hero-body">
-            <h2 class="title has-text-centered">Примеры работ, выполненные проекты<br/>#водоснабжение</h2>
+            <h2 class="title has-text-centered">Рабочий процесс, выполненные проекты</h2>
+            <h4 class="subtitle has-text-centered"><a href="https://www.instagram.com/gderemonta_net/" target="_blank">@gderemonta_net</a> #водоснабжение</h4>
             <br/>
             <br/>
             <br/>
@@ -151,8 +157,8 @@
         var dateString = moment.unix(image.created_time).format('YYYY-MM-DD HH:mm');
         image.created_time = moment(dateString).startOf('minute').fromNow();
         // Change caption.
-        if (image.caption.text.length > 150) {
-          image.caption.text = image.caption.text.slice(0, 150) + '...';
+        if (image.caption.text.length > 100) {
+          image.caption.text = image.caption.text.slice(0, 100) + '...';
         }
         // Return array.
         return image.tags.indexOf('водоснабжение') >= 0;

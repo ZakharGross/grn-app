@@ -23,7 +23,7 @@ module.exports = {
         href: 'https://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=cyrillic'
       },
       {rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css'},
-      {rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/sweetalert2/6.3.2/sweetalert2.min.css'},
+      {rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/sweetalert2/6.4.3/sweetalert2.min.css'},
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
       {rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico'}
     ]

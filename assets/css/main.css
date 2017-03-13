@@ -88,6 +88,12 @@ h2 {
   width: inherit;
 }
 
+/* Table */
+
+.table tr td:last-child {
+  width: 150px;
+}
+
 /* Helpers */
 
 .title.is-green {
@@ -163,6 +169,12 @@ ul.list-category li a {
   font-size: 1.4rem;
 }
 
+.image.is-256x256 {
+  margin: 0 auto;
+  width: 256px;
+  height: auto;
+}
+
 /* Forms */
 
 .form input[type=text],
@@ -177,6 +189,19 @@ ul.list-category li a {
 }
 
 /* Pages */
+
+.is-order-form {
+  background-image: url('~assets/img/order-form.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.is-order-form .hero {
+  background-color: transparent;
+}
+.is-order-form h4 {
+  color: rgb(225,225,225);
+}
 
 .index-background .title {
   font-size: 3.8rem;
@@ -330,6 +355,9 @@ hr.swal2-spacer {
     margin-left: .5rem;
     margin-right: .5rem;
   }
+  .table tr td:last-child {
+    width: 100px;
+  }
 }
 
 @media (max-device-width: 768px) {
@@ -340,5 +368,8 @@ hr.swal2-spacer {
     margin-top: 1rem;
     margin-left: .5rem;
     margin-right: .5rem;
+  }
+  .table tr td:last-child {
+    width: 120px;
   }
 }

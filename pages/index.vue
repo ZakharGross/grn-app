@@ -84,7 +84,7 @@
 											<h4>&mdash; Есть вопросы по моей работе и услугам?</h4>
 											<h4>&mdash; Оставьте свой номер, я перезвоню вам!</h4>
 											<br/>
-											<app-order-form/>
+											<app-order-form-front/>
 										</div>
 										<div class="bordered is-border-gray">
 											<h3>#когдапрорабмудак</h3>
@@ -122,7 +122,7 @@
 </template>
 
 <script>
-  import AppOrderForm from '~components/OrderForm.vue';
+  import AppOrderFormFront from '~components/OrderFormFront.vue';
   import AppPageMenu from '~components/PageMenu.vue';
 
   if (process.BROWSER_BUILD) {
@@ -170,7 +170,7 @@
   
   export default {
     components: {
-      AppOrderForm, 
+      AppOrderFormFront, 
       AppPageMenu
     },
     head () {

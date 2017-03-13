@@ -25,15 +25,16 @@
       <div class="content">
         <section class="hero is-medium">
           <div class="hero-body">
-            <div class="menu-page-app">
-              <div class="columns has-text-centered">
-                <div class="column is-one-quarter is-full-mobile is-offset-2">
+          <div class="columns has-text-centered">
+            <div class="column is-10 is-offset-1">
+              <div class="columns">
+                <div class="column is-full-mobile">
                   <img class="image is-128x128" src="~assets/img/money.svg" alt="Шаг 1"/><br/>Оплата работ по проектированию и транспортные расходы
                 </div>
-                <div class="column is-one-quarter is-full-mobile">
+                <div class="column is-full-mobile">
                   <img class="image is-128x128" src="~assets/img/viezd.svg" alt="Шаг 2"/><br/>Выезд проектировщика на объект, произведение замеров
                 </div>                
-                <div class="column is-one-quarter is-full-mobile">
+                <div class="column is-full-mobile">
                   <img class="image is-128x128" src="~assets/img/oplata-100.svg" alt="Шаг 3"/><br/>Спустя 5 дней&nbsp;&mdash; вы получаете полностью готовый проект
                 </div>
               </div>
@@ -45,30 +46,34 @@
     <div class="is-gray">
       <div class="container">
         <div class="content">
-          <section class="hero is-medium">
+          <section class="hero is-small">
             <div class="hero-body">
               <div class="menu-page-app">
                 <div class="columns">
                   <div class="column is-full-mobile">
-                    <h2>Что входит в проект/чертёж?</h2>
-                    <p>В чертёж дома входит:</p>
+                    <h2>Что входит в проект (чертёж)?</h2>
                     <ul>
-                      <li>Поэтажная разметка</li>
-                      <li>Высота потолков, размеры окон, стен</li>
-                      <li>Толщина утеплителя</li>
-                      <li>Толщина перекрытий и его материал</li>
+                      <li>Поэтажная разметка;</li>
+                      <li>Высота потолков, размеры окон, стен;</li>
+                      <li>Толщина утеплителя;</li>
+                      <li>Толщина перекрытий и его материал.</li>
                     </ul>
-                    <h2>Стоимость услуги</h2>
+                    <h2>Стоимость проектирования</h2>
                     <table class="table is-striped">
                       <tbody>
                         <tr><td>Чертёж дома до 100 м<sup>2</sup></td><td>5000 руб./проект</td></tr>
                         <tr><td>Чертёж дома до 200 м<sup>2</sup></td><td>8000 руб./проект</td></tr>
                         <tr><td>Проект кровли, водостоков и автоматики</td><td>от 5000 руб./проект</td></tr>
                         <tr><td>Проект <a href="/montazh-vodyanogo-teplogo-pola/">водяного тёплого пола</a> (при условии монтажа)</td><td>бесплатно</td></tr>
+                        </tbody>
+                    </table>
+                    <h3>Выезд на объект</h3>
+                    <table class="table is-striped">
+                      <tbody>
                         <tr><td>Транспортные расходы (в черте города)</td><td>400 руб./поездка</td></tr>
                         <tr><td>Транспортные расходы (по Лен. обл.)</td><td>от 600 руб./поездка</td></tr>
                       </tbody>
-                    </table>                                       
+                    </table>
                   </div>
                   <div class="column is-full-mobile">
                     <div class="bordered is-border-gray less-margin">
@@ -76,25 +81,30 @@
                       <ul>
                         <li>Разработка графических материалов технического решения систем напольного отопления (снеготаяния):
                           <ul>
-                            <li>Схемы прокладки магистральных трубопроводов</li>
-                            <li>Схемы укладки демпферной ленты</li>
-                            <li>Планы раскладки контуров системы напольного отопления (снеготаяния)</li>
-                            <li>Схемы расстановки оборудования (автоматики, узлов, механизмов и так далее)</li>                          
+                            <li>Схемы прокладки магистральных трубопроводов;</li>
+                            <li>Схемы укладки демпферной ленты;</li>
+                            <li>Планы раскладки контуров системы напольного отопления (снеготаяния);</li>
+                            <li>Схемы расстановки оборудования (автоматики, узлов, механизмов и так далее).</li>                          
                           </ul>
                         </li>
                         <li>Разработка спецификации оборудования и материалов системы напольного отопления (снеготаяния).</li>
                       </ul>                    
                       <p><a href="/downloads/sample-project.pdf" target="_blank">Посмотреть пример полностью готового проекта с расчётом теплопотерь, который я для Вас сделаю</a>&nbsp;<span class="icon"><i class="fa fa-angle-right"></i></span></p>
                     </div>
-                    <div class="bordered">
-                      <h4>&mdash; Есть ещё вопросы или готовы сделать заказ?</h4>
-                      <h4>&mdash; Оставьте свой номер, я перезвоню вам!</h4>
-                      <br/>
-                      <app-order-form/>
-                    </div> 
                   </div>
                 </div>
               </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="is-order-form">
+      <div class="container">
+        <div class="content">
+          <section class="hero is-medium">
+            <div class="hero-body">
+              <app-order-form/>
             </div>
           </section>
         </div>
@@ -104,7 +114,8 @@
       <div class="content">
         <section class="hero is-small">
           <div class="hero-body">
-            <h2 class="title has-text-centered">Примеры работ, выполненные проекты<br/>#проект</h2>
+            <h2 class="title has-text-centered">Рабочий процесс, выполненные проекты</h2>
+            <h4 class="subtitle has-text-centered"><a href="https://www.instagram.com/gderemonta_net/" target="_blank">@gderemonta_net</a> #проект</h4>
             <br/>
             <br/>
             <br/>

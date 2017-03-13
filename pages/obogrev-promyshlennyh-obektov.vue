@@ -56,10 +56,42 @@
     <div class="is-gray">
       <div class="container">
         <div class="content">
-          <section class="hero is-medium">
+          <section class="hero is-small">
             <div class="hero-body">
               <div class="menu-page-app">
                 <div class="columns">
+                  <div class="column is-full-mobile">
+                    <h2>Стоимость основных работ</h2>
+                    <table class="table is-striped">
+                      <tbody>
+                        <tr><td>Монтаж греющего кабеля на высоте</td><td>120 руб./пог.м</td></tr>
+                        <tr><td>Монтаж силового кабеля</td><td>80 руб./пог.м</td></tr>
+                        <tr><td>Изолирование греющего кабеля и соединение с силовым</td><td>500 руб./шт.</td></tr>
+                      </tbody>
+                    </table>
+                    <h3>Установка терморегулятора</h3>
+                    <table class="table is-striped">
+                      <tbody>
+                        <tr><td>Штробление (под гофротрубу)</td><td>110 руб./пог.м</td></tr>
+                        <tr><td>Монтаж терморегулятора</td><td>360 руб./шт.</td></tr>
+                      </tbody>
+                    </table>
+                    <h3>Возможно понадобится</h3>
+                    <table class="table is-striped">
+                      <tbody>
+                        <tr><td>Устройство ввода кабеля в трубу</td><td>500 руб./шт.</td></tr>
+                        <tr><td>Прохождение стены</td><td>50 руб./отверстие</td></tr>
+                        <tr><td>Разнорабочий</td><td>2000 руб./день</td></tr>
+                      </tbody>
+                    </table>
+                    <h3>Выезд на объект</h3>
+                    <table class="table is-striped">
+                      <tbody>
+                        <tr><td>Транспортные расходы (в черте города)</td><td>400 руб./поездка</td></tr>
+                        <tr><td>Транспортные расходы (по Лен. обл.)</td><td>от 600 руб./поездка</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
                   <div class="column is-full-mobile">
                     <h2>Принципы моей работы</h2>
                     <ul>
@@ -69,21 +101,6 @@
                       <li>Всегда полный отчёт (чеки) по стройматериалам;</li>
                       <li>Я даю 1 год настоящей гарантии на все свои работы.</li>
                     </ul>
-                    <h2>Стоимость услуг</h2>
-                    <table class="table is-striped">
-                      <tbody>
-                        <tr><td>Монтаж греющего кабеля на высоте</td><td>120 руб./пог.м</td></tr>
-                        <tr><td>Монтаж силового кабеля</td><td>80 руб./пог.м</td></tr>
-                        <tr><td>Изолирование греющего кабеля и соединение с силовым</td><td>500 руб./шт.</td></tr>
-                        <tr><td>Штробление (под гофротрубу)</td><td>110 руб./пог.м</td></tr>
-                        <tr><td>Монтаж терморегулятора</td><td>360 руб./шт.</td></tr>
-                        <tr><td>Транспортные расходы (в черте города)</td><td>400 руб./поездка</td></tr>
-                        <tr><td>Транспортные расходы (по Лен. обл.)</td><td>от 600 руб./поездка</td></tr>
-                        <tr><td>Разнорабочий (по необходимости)</td><td>2000 руб./день</td></tr>                        
-                      </tbody>
-                    </table>
-                  </div>
-                  <div class="column is-full-mobile">
                     <!--<h3>Полезные советы <span class="tag is-medium is-success">Бонус!</span></h3>
                     <ul>
                       <li>Очень важно знать при какой температуре воздуха, греющего кабель потребляет свою номинальную мощность. Это Ваша экономия электроэнергии;</li>
@@ -96,14 +113,19 @@
                       <li>FINE Korea — 10% от розницы</li>
                       <li>E&S Tec — 10% от розницы</li>
                     </ul>
-                    <div class="bordered">
-                      <h4>&mdash; Есть ещё вопросы или готовы сделать заказ?</h4>
-                      <h4>&mdash; Оставьте свой номер, я перезвоню вам!</h4>
-                      <br/>
-                      <app-order-form/>
-                    </div>
                   </div>
                 </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="is-order-form">
+      <div class="container">
+        <div class="content">
+          <section class="hero is-medium">
+            <div class="hero-body">
+              <app-order-form/>
             </div>
           </section>
         </div>
@@ -113,7 +135,8 @@
       <div class="content">
         <section class="hero is-small">
           <div class="hero-body">
-            <h2 class="title has-text-centered">Примеры работ, выполненные проекты<br/>#промышленныйобогрев</h2>
+            <h2 class="title has-text-centered">Рабочий процесс, выполненные проекты</h2>
+            <h4 class="subtitle has-text-centered"><a href="https://www.instagram.com/gderemonta_net/" target="_blank">@gderemonta_net</a> #промышленныйобогрев</h4>
             <br/>
             <br/>
             <br/>
@@ -156,8 +179,8 @@
         var dateString = moment.unix(image.created_time).format('YYYY-MM-DD HH:mm');
         image.created_time = moment(dateString).startOf('minute').fromNow();
         // Change caption.
-        if (image.caption.text.length > 150) {
-          image.caption.text = image.caption.text.slice(0, 150) + '...';
+        if (image.caption.text.length > 100) {
+          image.caption.text = image.caption.text.slice(0, 100) + '...';
         }
         // Return array.
         return image.tags.indexOf('промышленныйобогрев') >= 0;
