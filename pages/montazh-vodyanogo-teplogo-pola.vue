@@ -65,33 +65,32 @@
               <div class="columns has-text-centered">
                 <div class="column">
                   <div class="white-background" v-on:click="toggleModal(1)">
-                    <h3>Хорошо утепленные помещения</h3>
-                    <p><span class="tag is-warning">Хит!</span> Подходит для хорошо утепленных помещений с полами без магистралей.</p>
-                    <h4>480 руб./м<sup>2</sup></h4>
+                    <h3>Для сухого монтажа в помещении</h3>
+                    <p>Подходит для помещений, где нельзя заливать стяжку (деревянные перекрытия).</p>
+                    <h4>330 руб./м<sup>2</sup></h4>
                     <hr>
-                    <button class="button is-warning">Что входит в стоимость?</button>
+                    <button class="button is-outlined is-info">Что входит в стоимость?</button>
                   </div>
                   <div class="modal var-1 has-text-left">
                     <div class="modal-background"></div>
                     <div class="modal-card">
                       <header class="modal-card-head">
-                        <p class="modal-card-title">Монтаж пола 480 руб./м<sup>2</sup></p>
+                        <p class="modal-card-title">Монтаж пола 330 руб./м<sup>2</sup></p>
                         <button v-on:click="toggleModal(1)" class="delete"></button>
                       </header>
                       <section class="modal-card-body">
                         <h5>В стоимость 1 м<sup>2</sup> входит:</h5>
                         <table class="table is-striped">
                           <tbody>
+                            <tr><td>Укладка универсальной фольгированной системы (30 мм)</td><td>150 руб./м<sup>2</sup></td></tr>
                             <tr><td>Монтаж трубы водяного пола</td><td>180 руб./м<sup>2</sup></td></tr>
-                            <tr><td>Укладка экструдированного пенополистерола</td><td>150 руб./м<sup>2</sup></td></tr>
-                            <tr><td>Укладка арматурной сетки</td><td>100 руб./м<sup>2</sup></td></tr>
-                            <tr><td>Укладка технической плёнки</td><td>50 руб./м<sup>2</sup></td></tr>
                           </tbody>
                         </table>
                         <br/>
                         <h5>Дополнительно Вы можете заказать:</h5>
                         <table class="table is-striped">
                           <tbody>
+                            <tr><td>Укладка гипсоволокнистого листа (ГВЛ)</td><td>200 руб./м<sup>2</sup></td></tr>
                             <tr><td>Уборка помещения (швабра + строительный пылесос)</td><td>50 руб./м<sup>2</sup></td></tr>
                             <tr><td>Утепление стыков и щелей монтажной пеной</td><td>50 руб./м<sup>2</sup></td></tr>
                             <tr><td>Приклеивание фольгированного утеплителя к черновому полу</td><td>50 руб./м<sup>2</sup></td></tr>
@@ -106,26 +105,27 @@
                 </div>
                 <div class="column">
                   <div class="white-background" v-on:click="toggleModal(2)">
-                    <h3>Для сухого монтажа в помещении</h3>
-                    <p>Подходит для помещений, где нельзя заливать стяжку (деревянные перекрытия).</p>
-                    <h4>530 руб./м<sup>2</sup></h4>
+                    <h3>Хорошо утепленные помещения</h3>
+                    <p><span class="tag is-warning">Хит!</span> Подходит для хорошо утепленных помещений с полами без магистралей.</p>
+                    <h4>480 руб./м<sup>2</sup></h4>
                     <hr>
-                    <button class="button is-outlined is-info">Что входит в стоимость?</button>
+                    <button class="button is-warning">Что входит в стоимость?</button>
                   </div>
                   <div class="modal var-2 has-text-left">
                     <div class="modal-background"></div>
                     <div class="modal-card">
                       <header class="modal-card-head">
-                        <p class="modal-card-title">Монтаж пола 530 руб./м<sup>2</sup></p>
+                        <p class="modal-card-title">Монтаж пола 480 руб./м<sup>2</sup></p>
                         <button v-on:click="toggleModal(2)" class="delete"></button>
                       </header>
                       <section class="modal-card-body">
                         <h5>В стоимость 1 м<sup>2</sup> входит:</h5>
                         <table class="table is-striped">
                           <tbody>
+                            <tr><td>Укладка экструдированного пенополистерола</td><td>150 руб./м<sup>2</sup></td></tr>
+                            <tr><td>Укладка технической плёнки</td><td>50 руб./м<sup>2</sup></td></tr>
+                            <tr><td>Укладка арматурной сетки</td><td>100 руб./м<sup>2</sup></td></tr>
                             <tr><td>Монтаж трубы водяного пола</td><td>180 руб./м<sup>2</sup></td></tr>
-                            <tr><td>Укладка гипсоволокнистого листа (ГВЛ)</td><td>200 руб./м<sup>2</sup></td></tr>
-                            <tr><td>Укладка фольгированного утеплителя</td><td>150 руб./м<sup>2</sup></td></tr>
                           </tbody>
                         </table>
                         <br/>
@@ -134,7 +134,6 @@
                           <tbody>
                             <tr><td>Уборка помещения (швабра + строительный пылесос)</td><td>50 руб./м<sup>2</sup></td></tr>
                             <tr><td>Утепление стыков и щелей монтажной пеной</td><td>50 руб./м<sup>2</sup></td></tr>
-                            <tr><td>Приклеивание фольгированного утеплителя к черновому полу</td><td>50 руб./м<sup>2</sup></td></tr>
                           </tbody>
                         </table>
                       </section>
@@ -163,10 +162,10 @@
                         <h5>В стоимость 1 м<sup>2</sup> входит:</h5>
                         <table class="table is-striped">
                           <tbody>
-                            <tr><td>Монтаж трубы водяного пола</td><td>180 руб./м<sup>2</sup></td></tr>
                             <tr><td>Укладка экструдированного пенополистерола (в 2 слоя)</td><td>300 руб./м<sup>2</sup></td></tr>
-                            <tr><td>Укладка арматурной сетки</td><td>100 руб./м<sup>2</sup></td></tr>
                             <tr><td>Укладка технической плёнки</td><td>50 руб./м<sup>2</sup></td></tr>
+                            <tr><td>Укладка арматурной сетки</td><td>100 руб./м<sup>2</sup></td></tr>
+                            <tr><td>Монтаж трубы водяного пола</td><td>180 руб./м<sup>2</sup></td></tr>
                           </tbody>
                         </table>
                         <br/>
@@ -175,7 +174,6 @@
                           <tbody>
                             <tr><td>Уборка помещения (швабра + строительный пылесос)</td><td>50 руб./м<sup>2</sup></td></tr>
                             <tr><td>Утепление стыков и щелей монтажной пеной</td><td>50 руб./м<sup>2</sup></td></tr>
-                            <tr><td>Приклеивание фольгированного утеплителя к черновому полу</td><td>50 руб./м<sup>2</sup></td></tr>
                           </tbody>
                         </table>
                       </section>
@@ -204,11 +202,11 @@
                         <h5>В стоимость 1 м<sup>2</sup> входит:</h5>
                         <table class="table is-striped">
                           <tbody>
-                            <tr><td>Монтаж трубы водяного пола</td><td>180 руб./м<sup>2</sup></td></tr>
                             <tr><td>Укладка экструдированного пенополистерола (в 2 слоя)</td><td>300 руб./м<sup>2</sup></td></tr>
-                            <tr><td>Укладка арматурной сетки</td><td>100 руб./м<sup>2</sup></td></tr>
-                            <tr><td>Укладка технической плёнки</td><td>50 руб./м<sup>2</sup></td></tr>
                             <tr><td>Утепление стыков и щелей монтажной пеной</td><td>50 руб./м<sup>2</sup></td></tr>
+                            <tr><td>Укладка технической плёнки</td><td>50 руб./м<sup>2</sup></td></tr>
+                            <tr><td>Укладка арматурной сетки</td><td>100 руб./м<sup>2</sup></td></tr>
+                            <tr><td>Монтаж трубы водяного пола</td><td>180 руб./м<sup>2</sup></td></tr>
                           </tbody>
                         </table>
                         <br/>
@@ -216,7 +214,6 @@
                         <table class="table is-striped">
                           <tbody>
                             <tr><td>Уборка помещения (швабра + строительный пылесос)</td><td>50 руб./м<sup>2</sup></td></tr>
-                            <tr><td>Приклеивание фольгированного утеплителя к черновому полу</td><td>50 руб./м<sup>2</sup></td></tr>
                           </tbody>
                         </table>
                       </section>
@@ -243,6 +240,7 @@
                     <tbody>
                       <tr><td>Монтаж магистрали труб к магистральному коллектору</td><td>200&nbsp;руб./пог.м</td></tr>
                       <tr><td>Монтаж магистрального коллектора</td><td>2500&nbsp;руб./шт.</td></tr>
+                      <tr><td>Заполнение системы (воздух, вода или антифриз)</td><td>500&nbsp;руб./коллектор</td></tr>
                     </tbody>
                   </table>
                   <h3>Монтаж автоматики (термостатов)</h3>
@@ -250,10 +248,11 @@
                     <tbody>
                       <tr><td>Монтаж термостата проводного</td><td>500&nbsp;руб./шт.</td></tr>
                       <tr><td>Монтаж датчика температуры</td><td>500&nbsp;руб./шт.</td></tr>
-                      <tr><td>Монтаж комутационного блока проводного</td><td>2000&nbsp;руб./шт.</td></tr>
+                      <tr><td>Монтаж комутационного блока проводного</td><td>1500&nbsp;руб./шт.</td></tr>
                       <tr><td>Монтаж сервомотора</td><td>300&nbsp;руб./шт.</td></tr>
                       <tr><td>Прокладка провода от коллектора на термостаты в защитной гофротрубе</td><td>20&nbsp;руб./пог.м</td></tr>
-                      <tr><td>Штробление (под гофротрубу)</td><td>110 руб./пог.м</td></tr>
+                      <tr><td>Штробление под гофротрубу (простое)</td><td>100 руб./пог.м</td></tr>
+                      <tr><td>Штробление под гофротрубу (сложное)</td><td>200 руб./пог.м</td></tr>
                     </tbody>
                   </table>
                   <h3>Радиаторы, конвекторы</h3>
@@ -266,7 +265,9 @@
                   <h3>Стяжка</h3>
                   <table class="table is-striped">
                     <tbody>                       
-                      <tr><td>Монтаж полусухой стяжки</td><td>550&nbsp;руб./м<sup>2</sup></td></tr>
+                      <tr><td>Монтаж полусухой стяжки (от 100 м<sup>2</sup>)</td><td>530&nbsp;руб./м<sup>2</sup></td></tr>
+                      <tr><td>Монтаж полусухой стяжки (от 70 до 100 м<sup>2</sup>)</td><td>600&nbsp;руб./м<sup>2</sup></td></tr>
+                      <tr><td>Монтаж полусухой стяжки (до 70 м<sup>2</sup>)</td><td>650&nbsp;руб./м<sup>2</sup></td></tr>
                     </tbody>
                   </table>
                   <h3>Возможно понадобится</h3>
@@ -275,7 +276,8 @@
                       <tr><td>Монтаж коллекторного шкафа (наружного)</td><td>1000&nbsp;руб./шт.</td></tr>
                       <tr><td>Монтаж коллекторного шкафа (внутруннего)</td><td>от 1500&nbsp;руб./шт.</td></tr>
                       <tr><td>Монтаж демпферной ленты</td><td>10&nbsp;руб./пог.м</td></tr>
-                      <tr><td>Прохождение стены</td><td>50 руб./отверстие</td></tr>
+                      <tr><td>Прохождение стены (простое)</td><td>50 руб./отверстие</td></tr>
+                      <tr><td>Прохождение стены (сложное)</td><td>100 руб./отверстие</td></tr>
                     </tbody>
                   </table>
                   <h3>Выезд на объект</h3>
@@ -313,6 +315,28 @@
                     <li>СТД Петрович — максимальная скидка по золотой карте</li>
                     <li>Thermotech — 15% от розницы</li>
                   </ul>
+                  <h2>Новые разработки Thermotech <span class="tag is-medium is-danger">Новинка!</span></h2>
+                  <br/>
+                  <div class="columns">
+                    <div class="column"><img class="image" src="~assets/img/tmix-me-2000.jpg" alt="TMix ME-2000"/></div>
+                    <div class="column">
+                      <h3>Смесительный узел TMix ME-2000 (Мини-2000)</h3>
+                      <p><span class="tag is-warning">Без котла</span>&nbsp;<span class="tag is-warning">Автономный</span>&nbsp;<span class="tag is-warning">2 кВт</span></p>
+                      <p>Автономный смесительный узел. Является самой компактной системой водяных теплых полов, не требующей подключение к котлу.</p>
+                      <p>Оснащён блоком управления и встроенным нагревателем (мощность: 2 кВт). Предназначен для обогрева площадей до 100 м<sup>2</sup>.</p>
+                      <p>Цена: 23600 руб./шт.</p>
+                    </div>
+                  </div>
+                  <br/>
+                  <div class="columns">
+                    <div class="column"><img class="image" src="~assets/img/univers-folg-system.jpg" alt="univers folg system"/></div>
+                    <div class="column">
+                      <h3>Универсальная фольгированная система</h3>
+                      <p><span class="tag is-warning">Толщина 30 мм</span>&nbsp;<span class="tag is-warning">Шаг 200 мм</span>&nbsp;<span class="tag is-warning">Лёгкий</span></p>
+                      <p>Основой системы является универсальный элемент, сочетающий в себе слой экструдированного пенополистирола высокой плотности и теплораспределительный слой из алюминиевой фольги. Система может монтироваться как на бетонное основание, так и на черновой (дощатый) пол, уложенный на деревянные лаги.</p>
+                      <p>Цена: 214 руб./шт.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
