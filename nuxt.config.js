@@ -25,7 +25,8 @@ module.exports = {
       {rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css'},
       {rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/sweetalert2/6.4.3/sweetalert2.min.css'},
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
-      {rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico'}
+      {rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico'},
+      {rel: 'apple-touch-icon', href: '/apple-touch-icon.png'}
     ]
   },
   /*

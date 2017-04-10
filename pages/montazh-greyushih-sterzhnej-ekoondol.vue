@@ -152,7 +152,7 @@
         <section class="hero is-small">
           <div class="hero-body">
             <h2 class="title has-text-centered">Рабочий процесс, выполненные проекты</h2>
-            <h4 class="subtitle has-text-centered"><a href="https://www.instagram.com/gderemonta_net/" target="_blank">@gderemonta_net</a> #греющиестержни</h4>
+            <h4 class="subtitle has-text-centered"><a href="https://www.instagram.com/gderemonta_net/" target="_blank">@gderemonta_net</a> #экоондоль</h4>
             <br/>
             <br/>
             <br/>
@@ -199,7 +199,7 @@
           image.caption.text = image.caption.text.slice(0, 100) + '...';
         }
         // Return array.
-        return image.tags.indexOf('греющиестержни') >= 0;
+        return image.tags.indexOf('экоондоль') >= 0;
       },
       after: function() {
         if (!this.hasNext()) {

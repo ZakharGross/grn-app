@@ -67,7 +67,7 @@
                   <div class="white-background" v-on:click="toggleModal(1)">
                     <h3>Для сухого монтажа в помещении</h3>
                     <p>Подходит для помещений, где нельзя заливать стяжку (деревянные перекрытия).</p>
-                    <h4>330 руб./м<sup>2</sup></h4>
+                    <h4>300 руб./м<sup>2</sup></h4>
                     <hr>
                     <button class="button is-outlined is-info">Что входит в стоимость?</button>
                   </div>
@@ -75,7 +75,7 @@
                     <div class="modal-background"></div>
                     <div class="modal-card">
                       <header class="modal-card-head">
-                        <p class="modal-card-title">Монтаж пола 330 руб./м<sup>2</sup></p>
+                        <p class="modal-card-title">Монтаж пола 300 руб./м<sup>2</sup></p>
                         <button v-on:click="toggleModal(1)" class="delete"></button>
                       </header>
                       <section class="modal-card-body">
@@ -83,7 +83,7 @@
                         <table class="table is-striped">
                           <tbody>
                             <tr><td>Укладка универсальной фольгированной системы (30 мм)</td><td>150 руб./м<sup>2</sup></td></tr>
-                            <tr><td>Монтаж трубы водяного пола</td><td>180 руб./м<sup>2</sup></td></tr>
+                            <tr><td>Монтаж трубы водяного пола</td><td>150 руб./м<sup>2</sup></td></tr>
                           </tbody>
                         </table>
                         <br/>
@@ -107,7 +107,7 @@
                   <div class="white-background" v-on:click="toggleModal(2)">
                     <h3>Хорошо утепленные помещения</h3>
                     <p><span class="tag is-warning">Хит!</span> Подходит для хорошо утепленных помещений с полами без магистралей.</p>
-                    <h4>480 руб./м<sup>2</sup></h4>
+                    <h4>400 руб./м<sup>2</sup></h4>
                     <hr>
                     <button class="button is-warning">Что входит в стоимость?</button>
                   </div>
@@ -115,7 +115,7 @@
                     <div class="modal-background"></div>
                     <div class="modal-card">
                       <header class="modal-card-head">
-                        <p class="modal-card-title">Монтаж пола 480 руб./м<sup>2</sup></p>
+                        <p class="modal-card-title">Монтаж пола 400 руб./м<sup>2</sup></p>
                         <button v-on:click="toggleModal(2)" class="delete"></button>
                       </header>
                       <section class="modal-card-body">
@@ -124,8 +124,8 @@
                           <tbody>
                             <tr><td>Укладка экструдированного пенополистерола</td><td>150 руб./м<sup>2</sup></td></tr>
                             <tr><td>Укладка технической плёнки</td><td>50 руб./м<sup>2</sup></td></tr>
-                            <tr><td>Укладка арматурной сетки</td><td>100 руб./м<sup>2</sup></td></tr>
-                            <tr><td>Монтаж трубы водяного пола</td><td>180 руб./м<sup>2</sup></td></tr>
+                            <tr><td>Укладка арматурной сетки</td><td>50 руб./м<sup>2</sup></td></tr>
+                            <tr><td>Монтаж трубы водяного пола</td><td>150 руб./м<sup>2</sup></td></tr>
                           </tbody>
                         </table>
                         <br/>
@@ -147,7 +147,7 @@
                   <div class="white-background" v-on:click="toggleModal(3)">
                     <h3>Средне утеплённые помещения</h3>
                     <p>Подходит для помещений, где уже есть магистрали, а так же для подъёма финишного пола.</p>
-                    <h4>630 руб./м<sup>2</sup></h4>
+                    <h4>550 руб./м<sup>2</sup></h4>
                     <hr>
                     <button class="button is-outlined is-info">Что входит в стоимость?</button>
                   </div>
@@ -155,7 +155,7 @@
                     <div class="modal-background"></div>
                     <div class="modal-card">
                       <header class="modal-card-head">
-                        <p class="modal-card-title">Монтаж пола 630 руб./м<sup>2</sup></p>
+                        <p class="modal-card-title">Монтаж пола 550 руб./м<sup>2</sup></p>
                         <button v-on:click="toggleModal(3)" class="delete"></button>
                       </header>
                       <section class="modal-card-body">
@@ -164,8 +164,8 @@
                           <tbody>
                             <tr><td>Укладка экструдированного пенополистерола (в 2 слоя)</td><td>300 руб./м<sup>2</sup></td></tr>
                             <tr><td>Укладка технической плёнки</td><td>50 руб./м<sup>2</sup></td></tr>
-                            <tr><td>Укладка арматурной сетки</td><td>100 руб./м<sup>2</sup></td></tr>
-                            <tr><td>Монтаж трубы водяного пола</td><td>180 руб./м<sup>2</sup></td></tr>
+                            <tr><td>Укладка арматурной сетки</td><td>50 руб./м<sup>2</sup></td></tr>
+                            <tr><td>Монтаж трубы водяного пола</td><td>150 руб./м<sup>2</sup></td></tr>
                           </tbody>
                         </table>
                         <br/>
@@ -187,7 +187,7 @@
                   <div class="white-background" v-on:click="toggleModal(4)">
                     <h3>Плохо утеплённые помещения</h3>
                     <p>Подходит для первых холодных этажей в плохо утеплённых помещениях.</p>
-                    <h4>680 руб./м<sup>2</sup></h4>
+                    <h4>600 руб./м<sup>2</sup></h4>
                     <hr>
                     <button class="button is-outlined is-info">Что входит в стоимость?</button>
                   </div>
@@ -195,7 +195,7 @@
                     <div class="modal-background"></div>
                     <div class="modal-card">
                       <header class="modal-card-head">
-                        <p class="modal-card-title">Монтаж пола 680 руб./м<sup>2</sup></p>
+                        <p class="modal-card-title">Монтаж пола 600 руб./м<sup>2</sup></p>
                         <button v-on:click="toggleModal(4)" class="delete"></button>
                       </header>
                       <section class="modal-card-body">
@@ -205,8 +205,8 @@
                             <tr><td>Укладка экструдированного пенополистерола (в 2 слоя)</td><td>300 руб./м<sup>2</sup></td></tr>
                             <tr><td>Утепление стыков и щелей монтажной пеной</td><td>50 руб./м<sup>2</sup></td></tr>
                             <tr><td>Укладка технической плёнки</td><td>50 руб./м<sup>2</sup></td></tr>
-                            <tr><td>Укладка арматурной сетки</td><td>100 руб./м<sup>2</sup></td></tr>
-                            <tr><td>Монтаж трубы водяного пола</td><td>180 руб./м<sup>2</sup></td></tr>
+                            <tr><td>Укладка арматурной сетки</td><td>50 руб./м<sup>2</sup></td></tr>
+                            <tr><td>Монтаж трубы водяного пола</td><td>150 руб./м<sup>2</sup></td></tr>
                           </tbody>
                         </table>
                         <br/>
@@ -228,11 +228,12 @@
               <br/>
               <div class="columns">
                 <div class="column is-full-mobile">
-                  <!--<h3>Монтаж коллекторов поэтажный</h3>
+                  <!--<h3>Монтаж основания для водяного тёплого пола</h3>
                   <table class="table is-striped">
                     <tbody>
-                      <tr><td>Монтаж магистрали труб к коллектору распределительному от магистрального коллектора</td><td>200&nbsp;руб./пог.м</td></tr>
-                      <tr><td>Монтаж коллектора тёплого пола</td><td>2500&nbsp;руб./шт.</td></tr>
+                      <tr><td>Монтаж сухой системы</td><td>550&nbsp;руб./м<sup>2</sup></td></tr>
+                      <tr><td>Монтаж мокрой системы (в один слой)</td><td>400&nbsp;руб./м<sup>2</sup></td></tr>
+                      <tr><td>Монтаж мокрой системы (в два слоя)</td><td>550&nbsp;руб./м<sup>2</sup></td></tr>
                     </tbody>
                   </table>-->
                   <h3>Монтаж коллектора</h3>
@@ -319,7 +320,7 @@
                     <li>Thermotech — 15% от розницы</li>
                   </ul>
                   <h2>Новые разработки Thermotech <span class="tag is-medium is-danger">Новинка!</span></h2>
-                  <br/>
+                  <!--<br/>
                   <div class="columns">
                     <div class="column"><img class="image" src="~assets/img/tmix-me-2000.jpg" alt="TMix ME-2000"/></div>
                     <div class="column">
@@ -329,7 +330,7 @@
                       <p>Оснащён блоком управления и встроенным нагревателем (мощность: 2 кВт). Предназначен для обогрева площадей до 100 м<sup>2</sup>.</p>
                       <p>Цена: <strong>24&nbsp;750 руб./система</strong></p>
                     </div>
-                  </div>
+                  </div>-->
                   <br/>
                   <div class="columns">
                     <div class="column">
@@ -338,7 +339,7 @@
                     </div>
                     <div class="column">
                       <h3>Универсальная фольгированная система (400x600 мм)</h3>
-                      <p><span class="tag is-warning">Толщина 30 мм</span>&nbsp;<span class="tag is-warning">Шаг 200 мм</span>&nbsp;<span class="tag is-warning">Лёгкий</span></p>
+                      <p><span class="tag is-warning">Толщина 30 мм</span>&nbsp;<span class="tag is-warning">Без стяжки</span>&nbsp;<span class="tag is-warning">Лёгкий</span></p>
                       <p>Основой системы является универсальный элемент, сочетающий в себе слой экструдированного пенополистирола высокой плотности и теплораспределительный слой из алюминиевой фольги.</p>
                       <p>Система может монтироваться как на бетонное основание, так и на черновой (дощатый) пол, уложенный на деревянные лаги.</p>
                       <p>Цена: <strong>255 руб./шт.</strong></p>
@@ -398,7 +399,7 @@
       userId: 4509914945,
       accessToken: '4509914945.ba4c844.af1348fddd874088b357394b1bc5dfca',
       resolution: 'standard_resolution',
-      limit: 60,
+      limit: 12,
       sortBy: 'most-recent',
       template: '<div class="column is-one-quarter-desktop is-half-tablet is-full-mobile">' +
         '<figure class="image is-square"><img style="border-radius:3px;" src="{{image}}" alt="image {{model.created_time}}"/></figure>' +
