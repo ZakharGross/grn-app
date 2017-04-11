@@ -64,7 +64,7 @@
               <br/>
               <div class="columns has-text-centered">
                 <div class="column">
-                  <div class="white-background" v-on:click="toggleModal(1)">
+                  <div class="white-background is-block-link" v-on:click="toggleModal(1)">
                     <h3>Для сухого монтажа в помещении</h3>
                     <p>Подходит для помещений, где нельзя заливать стяжку (деревянные перекрытия).</p>
                     <h4>300 руб./м<sup>2</sup></h4>
@@ -104,7 +104,7 @@
                   </div>
                 </div>
                 <div class="column">
-                  <div class="white-background" v-on:click="toggleModal(2)">
+                  <div class="white-background is-block-link" v-on:click="toggleModal(2)">
                     <h3>Хорошо утепленные помещения</h3>
                     <p><span class="tag is-warning">Хит!</span> Подходит для хорошо утепленных помещений с полами без магистралей.</p>
                     <h4>400 руб./м<sup>2</sup></h4>
@@ -144,7 +144,7 @@
                   </div>
                 </div>
                 <div class="column">
-                  <div class="white-background" v-on:click="toggleModal(3)">
+                  <div class="white-background is-block-link" v-on:click="toggleModal(3)">
                     <h3>Средне утеплённые помещения</h3>
                     <p>Подходит для помещений, где уже есть магистрали, а так же для подъёма финишного пола.</p>
                     <h4>550 руб./м<sup>2</sup></h4>
@@ -184,7 +184,7 @@
                   </div>
                 </div>
                 <div class="column">
-                  <div class="white-background" v-on:click="toggleModal(4)">
+                  <div class="white-background is-block-link" v-on:click="toggleModal(4)">
                     <h3>Плохо утеплённые помещения</h3>
                     <p>Подходит для первых холодных этажей в плохо утеплённых помещениях.</p>
                     <h4>600 руб./м<sup>2</sup></h4>
@@ -228,14 +228,6 @@
               <br/>
               <div class="columns">
                 <div class="column is-full-mobile">
-                  <!--<h3>Монтаж основания для водяного тёплого пола</h3>
-                  <table class="table is-striped">
-                    <tbody>
-                      <tr><td>Монтаж сухой системы</td><td>550&nbsp;руб./м<sup>2</sup></td></tr>
-                      <tr><td>Монтаж мокрой системы (в один слой)</td><td>400&nbsp;руб./м<sup>2</sup></td></tr>
-                      <tr><td>Монтаж мокрой системы (в два слоя)</td><td>550&nbsp;руб./м<sup>2</sup></td></tr>
-                    </tbody>
-                  </table>-->
                   <h3>Монтаж коллектора</h3>
                   <table class="table is-striped">
                     <tbody>
@@ -260,8 +252,8 @@
                   <h3>Радиаторы, конвекторы</h3>
                   <table class="table is-striped">
                     <tbody>                       
-                      <tr><td>Монтаж конвектора в пол</td><td>1000&nbsp;руб./шт.</td></tr>
-                      <tr><td>Монтаж радиатора на стену</td><td>1000&nbsp;руб./шт.</td></tr>
+                      <tr><td>Монтаж конвектора в пол</td><td>2000&nbsp;руб./шт.</td></tr>
+                      <tr><td>Монтаж радиатора на стену</td><td>2000&nbsp;руб./шт.</td></tr>
                     </tbody>
                   </table>
                   <h3>Стяжка</h3>
@@ -311,9 +303,6 @@
                     <li>Я точно знаю какой высоты должен быть утеплитель на первых этажах и перекрытиях, чтобы было тепло;</li>
                     <li>Я не буду предлагать Вам теплоотражающую подложку, так как она бесполезна и долго не прослужит в стяжке.</li>
                   </ul>
-                  <div class="bordered less-margin is-border-gray">
-                    <p><a href="/downloads/sample-project.pdf" target="_blank">Посмотреть пример полностью готового проекта с расчётом теплопотерь, который я для Вас сделаю</a>&nbsp;<span class="icon"><i class="fa fa-angle-right"></i></span></p>
-                  </div>
                   <h3>Скидки от моих партнёров</h3>
                   <ul>
                     <li>СТД Петрович — максимальная скидка по золотой карте</li>
@@ -344,6 +333,48 @@
                       <p>Система может монтироваться как на бетонное основание, так и на черновой (дощатый) пол, уложенный на деревянные лаги.</p>
                       <p>Цена: <strong>255 руб./шт.</strong></p>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="hero is-small">
+            <div class="hero-body">
+              <h2 class="has-text-centered">Выполненые монтажи водяного пола</h2>
+              <br/>
+              <br/>
+              <div class="white-background">
+                <div class="columns">
+                  <div class="column">
+                    <img class="image is-256x256" src="~assets/img/project-syargi.svg" alt="project syargi"/>
+                  </div>
+                  <div class="column">
+                    <h3>Проект в пос. Сярьги (Лен. Обл.)</h3>                    
+                    <p>Площадь 190 м<sup>2</sup>, тёплый пол на 3-х этажах, средне утепленный дом</p>
+                    <ul>
+                      <li>Сухая система&nbsp;&mdash; 58.5 м<sup>2</sup></li>
+                      <li>Мокрая система (в один слой)&nbsp;&mdash; 26 м<sup>2</sup></li>
+                      <li>Мокрая система (в два слоя)&nbsp;&mdash; 100 м<sup>2</sup></li>
+                    </ul>
+                    <p>
+                      <span class="icon"><i class="fa fa-download"></i></span>&nbsp;
+                      <a href="/downloads/project-syargi.pdf" target="_blank">Скачать подробный проект дома</a><br/>
+                      <span class="icon"><i class="fa fa-download"></i></span>&nbsp;
+                      <a href="/downloads/project-syargi.xlsx" target="_blank">Скачать смету на проект</a>
+                    </p>
+                    <br/>
+                    <h4>Итого «под ключ»:&nbsp;&nbsp;955.575,- руб.</h4>
+                  </div>
+                  <div class="column">
+                    <ul>
+                      <li>Интегрированные коллекторы&nbsp;&mdash; 3 шт.</li>
+                      <li>Магистральный коллектор&nbsp;&mdash; 1 шт.</li>
+                      <li>Полная автоматика по всем этажам</li>
+                      <li>Два конвектора в полу (требование по проекту)</li>
+                      <li>Монтаж котла и бойлера косвенного нагрева</li>
+                      <li>Обвязка котла медью</li>
+                      <li>Стяжка полусухая</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -397,7 +428,7 @@
     let feed = new Instafeed({
       get: 'user',
       userId: 4509914945,
-      accessToken: '4509914945.ba4c844.af1348fddd874088b357394b1bc5dfca',
+      accessToken: '4509914945.1677ed0.e1deee9457f74189b0028f9fd7f0eeda',
       resolution: 'standard_resolution',
       limit: 12,
       sortBy: 'most-recent',

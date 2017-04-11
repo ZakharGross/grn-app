@@ -134,7 +134,7 @@
 		let feed = new Instafeed({
 	    get: 'user',
 	    userId: 4509914945,
-	    accessToken: '4509914945.ba4c844.af1348fddd874088b357394b1bc5dfca',
+	    accessToken: '4509914945.1677ed0.e1deee9457f74189b0028f9fd7f0eeda',
 	    resolution: 'standard_resolution',
 	    limit: 8,
 	    template: '<div class="column is-one-quarter-desktop is-half-tablet is-full-mobile">' +

@@ -25,17 +25,18 @@
       <div class="content">
         <section class="hero is-medium">
           <div class="hero-body">
-          <div class="columns has-text-centered">
-            <div class="column is-10 is-offset-1">
-              <div class="columns">
-                <div class="column is-full-mobile">
-                  <img class="image is-128x128" src="~assets/img/money.svg" alt="Шаг 1"/><br/>Оплата работ по проектированию и транспортные расходы
-                </div>
-                <div class="column is-full-mobile">
-                  <img class="image is-128x128" src="~assets/img/viezd.svg" alt="Шаг 2"/><br/>Выезд проектировщика на объект, произведение замеров
-                </div>                
-                <div class="column is-full-mobile">
-                  <img class="image is-128x128" src="~assets/img/oplata-100.svg" alt="Шаг 3"/><br/>Спустя 5 дней&nbsp;&mdash; вы получаете полностью готовый проект
+            <div class="columns has-text-centered">
+              <div class="column is-10 is-offset-1">
+                <div class="columns">
+                  <div class="column is-full-mobile">
+                    <img class="image is-128x128" src="~assets/img/money.svg" alt="Шаг 1"/><br/>Оплата работ по проектированию и транспортные расходы
+                  </div>
+                  <div class="column is-full-mobile">
+                    <img class="image is-128x128" src="~assets/img/viezd.svg" alt="Шаг 2"/><br/>Выезд проектировщика на объект, произведение замеров
+                  </div>                
+                  <div class="column is-full-mobile">
+                    <img class="image is-128x128" src="~assets/img/oplata-100.svg" alt="Шаг 3"/><br/>Спустя 5 дней&nbsp;&mdash; вы получаете полностью готовый проект
+                  </div>
                 </div>
               </div>
             </div>
@@ -143,7 +144,7 @@
     let feed = new Instafeed({
       get: 'user',
       userId: 4509914945,
-      accessToken: '4509914945.ba4c844.af1348fddd874088b357394b1bc5dfca',
+      accessToken: '4509914945.1677ed0.e1deee9457f74189b0028f9fd7f0eeda',
       resolution: 'standard_resolution',
       limit: 60,
       sortBy: 'most-recent',
