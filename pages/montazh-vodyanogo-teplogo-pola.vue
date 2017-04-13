@@ -358,22 +358,22 @@
                     </ul>
                     <p>
                       <span class="icon"><i class="fa fa-download"></i></span>&nbsp;
-                      <a href="/downloads/project-syargi.pdf" target="_blank">Скачать подробный проект дома</a><br/>
+                      <a href="/downloads/project-syargi.pdf" target="_blank">Посмотреть проект водяного пола</a><br/>
                       <span class="icon"><i class="fa fa-download"></i></span>&nbsp;
-                      <a href="/downloads/project-syargi.xlsx" target="_blank">Скачать смету на проект</a>
+                      <a href="https://yadi.sk/d/7JxpSUR83GgRa5" target="_blank">Посмотреть смету проекта</a>
                     </p>
                     <br/>
-                    <h4>Итого «под ключ»:&nbsp;&nbsp;955.575,- руб.</h4>
+                    <h4>Итого «под ключ»:&nbsp;&nbsp;879.975,- руб.</h4>
                   </div>
                   <div class="column">
                     <ul>
                       <li>Интегрированные коллекторы&nbsp;&mdash; 3 шт.</li>
                       <li>Магистральный коллектор&nbsp;&mdash; 1 шт.</li>
                       <li>Полная автоматика по всем этажам</li>
-                      <li>Два конвектора в полу (требование по проекту)</li>
                       <li>Монтаж котла и бойлера косвенного нагрева</li>
-                      <li>Обвязка котла медью</li>
-                      <li>Стяжка полусухая</li>
+                      <li>Система котельной собрана из медных труб</li>
+                      <li>В стоимость, также, входят: котёл (15 кВт), бойлер косвенного нагрева (200 л), 2х конвектора в полу (3 м), расширительный бак (12 л), сопутствующие товары</li>
+                      <li>Стяжка полусухая&nbsp;&mdash; 128 м<sup>2</sup></li>
                     </ul>
                   </div>
                 </div>
