@@ -45,8 +45,8 @@
             if (process.BROWSER_BUILD) {
               const swal = require('sweetalert2');              
               swal('Запрос отправлен!', 'Спасибо! Мы свяжемся с вами в ближайшее время.', 'success');
-              yaCounter42715709.reachGoal('call');
               setTimeout(function() {
+                //yaCounter42715709.reachGoal('call');
                 swal.close();
               }, 2000);
             }
@@ -55,6 +55,7 @@
             if (process.BROWSER_BUILD) {
               const swal = require('sweetalert2');
               swal('Ошибка!', 'Что-то пошло не так..', 'info');
+              console.log(error);
               setTimeout(function() {
                 swal.close();
               }, 2000);

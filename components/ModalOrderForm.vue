@@ -30,10 +30,11 @@
         if (this.client_name !== '' && this.client_phone !== '') {
           axios.post('/tech/sendmail.php?client_name=' + encodeURIComponent(this.client_name) + '&client_phone=' + encodeURIComponent(this.client_phone))
           .then(function (response) {             
-            yaCounter42715709.reachGoal('call');
+            //yaCounter42715709.reachGoal('call');
             alert('Запрос отправлен, спасибо! Я свяжусь с Вами в ближайшее время.');
           })
           .catch(function (error) {
+            console.log(error);
             alert('Ошибка! Что-то пошло не так..');
           });
         }
