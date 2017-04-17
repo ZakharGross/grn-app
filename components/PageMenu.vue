@@ -15,7 +15,7 @@
 		<h2 class="title">Монтаж тёплого пола</h2>						
 		<ul class="list-category">
 			<li><a href="/montazh-rezistivnogo-kabelya-greyushchih-matov/">Монтаж резистивного кабеля, греющих матов</a></li>
-			<li><a href="/montazh-greyushih-sterzhnej-ekoondol/">Монтаж греющих стержней «Эко-Ондоль»</a></li>
+			<li><a href="/montazh-greyushih-sterzhnej-ekoondol/">Монтаж греющих стержней Eco Ondol</a>&nbsp;&nbsp;<span class="tag is-medium is-warning is-hidden-mobile">Новинка!</span></li>
 			<li><a href="/montazh-infrakrasnoy-greyushchey-plyonki/">Монтаж инфракрасной греющей плёнки</a></li>
 			<li><a href="/montazh-vodyanogo-teplogo-pola/">Монтаж водяного тёплого пола</a>&nbsp;&nbsp;<span class="tag is-medium is-success is-hidden-mobile">Профи!</span></li>
 		</ul>
