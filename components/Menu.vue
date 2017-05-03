@@ -23,6 +23,7 @@
           </a>
         </div>
         <div class="nav-right nav-menu">
+          <a href="/otziv/" class="nav-item">Отзывы</a>
           <a href="#" class="nav-item" v-on:click.prevent="openServiceModal()">Услуги и цены</a>
           <a href="/kontakty/" class="nav-item">Контакты</a>
         </div>

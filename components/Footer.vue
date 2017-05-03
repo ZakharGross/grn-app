@@ -11,7 +11,10 @@
 		  				<span class="icon"><i class="fa fa-youtube"></i></span>&nbsp;<a href="https://www.youtube.com/channel/UCzNmB1htS83gLUoiHWiV0xQ/videos?flow=list&sort=p&view=0" target="_blank">YouTube</a>
 		  			</p>
 		  			<p>При использовании материалов&nbsp;&mdash; ссылка на сайт <strong>GdeRemonta.Net</strong> обязательна. Цены, указанные на данном сайте, не являются публичной офертой.</p>
-		  			<p>Мой сборник <a href="/gorestroiteli/">строительных ляпов</a> с различных объектов.</p>
+		  			<ul>
+		  				<li><a href="/otziv/">Настоящие отзывы</a> о моей работе от довольных клиентов.</li>
+		  				<li>Сборник <a href="/gorestroiteli/">строительных ляпов</a> с различных объектов.</li>
+		  			</ul>
 		  		</div>
 		  		<div class="column is-one-third-desktop is-half-tablet is-full-mobile">
 		  			<p><strong>Реквизиты ООО «Изи Групп»</strong></p>
