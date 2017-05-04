@@ -41,7 +41,7 @@
         foreach ($jsonData_source->data as $key => $value) {
           $jsonData[$key] = new stdClass();
           $jsonData[$key]->created_time = $value->created_time;
-          $jsonData[$key]->url = $value->images->standard_resolution->url;
+          $jsonData[$key]->url = $value->images->low_resolution->url;
           $jsonData[$key]->caption = $value->caption->text;
         }
 

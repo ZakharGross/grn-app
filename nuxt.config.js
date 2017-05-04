@@ -42,8 +42,7 @@ module.exports = {
   build: {
     vendor: [
       'axios',
-      'v-mask',
-      'instafeed.js'
+      'v-mask'
     ]
   },
   plugins: [

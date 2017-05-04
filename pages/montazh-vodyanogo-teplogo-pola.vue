@@ -403,9 +403,7 @@
             <br/>
             <br/>
             <br/>
-            <div class="columns is-mobile is-multiline">
-              
-            </div>
+            <div id="instafeed" class="columns is-mobile is-multiline"></div>
             <br/>
             <!--<div class="has-text-centered">
               <button class="is-medium is-info is-outlined button" id="load-more">Посмотреть ещё!</button>
@@ -420,13 +418,40 @@
 <script>
   import AppOrderForm from '~components/OrderForm.vue';
   import AppModalOrderForm from '~components/ModalOrderForm.vue';
-  import AppInstagramFeed from '~components/InstagramFeed.vue';
-  
+
+  import axios from 'axios';  
+
+  if (process.BROWSER_BUILD) {
+
+    function myInstagramFeed(hashtag) {
+      let url = 'https://gderemonta.net/tech/instagramfeed.php?hashtag=' + hashtag;
+      let feed = [];
+
+      const moment = require('moment');
+      moment.locale('ru');
+
+      axios.get(url)
+      .then((response) => {
+        feed = response.data;
+
+        for (let item in feed) {
+          //console.log(feed[item]);
+          document.getElementById('instafeed').innerHTML += '<div class="column is-3"><img style="border-radius:3px;" src="' + feed[item].url + '"/><strong>' + moment(moment.unix(feed[item].created_time).format('YYYY-MM-DD HH:mm')).startOf('minute').fromNow() + '</strong><p>' + feed[item].caption + '</p></div>';
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+    }
+
+    myInstagramFeed('водянойтеплыйпол');
+
+  }
+
   export default {
     components: {
       AppOrderForm,
-      AppModalOrderForm,
-      AppInstagramFeed
+      AppModalOrderForm
     },
     head () {
       return {
