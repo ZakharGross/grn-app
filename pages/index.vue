@@ -109,11 +109,11 @@
 						<br/>
 						<br/>
 						<br/>
-						<div class="columns is-mobile is-multiline" id="instafeed"></div>
-						<br/>
-						<div class="has-text-centered">
-							<button class="is-medium is-info is-outlined button" id="load-more">Посмотреть ещё!</button>
-						</div>
+						<div id="instafeed" class="columns is-mobile is-multiline"></div>
+            <br/>
+            <div class="has-text-centered">
+              <button class="is-medium is-info is-outlined button" id="load-more">Посмотреть ещё!</button>
+            </div>
 					</div>
 				</section>
 			</div>
@@ -125,48 +125,68 @@
   import AppOrderFormFront from '~components/OrderFormFront.vue';
   import AppPageMenu from '~components/PageMenu.vue';
 
+  import axios from 'axios';  
+
   if (process.BROWSER_BUILD) {
-	  const Instafeed = require('instafeed.js');
-		const moment = require('moment');
-
-		let loadButton = document.getElementById('load-more');
-
-		let feed = new Instafeed({
-	    get: 'user',
-	    userId: 4509914945,
-	    accessToken: '4509914945.1677ed0.e1deee9457f74189b0028f9fd7f0eeda',
-	    resolution: 'standard_resolution',
-	    limit: 8,
-	    template: '<div class="column is-one-quarter-desktop is-half-tablet is-full-mobile">' +
-	      '<figure class="image is-square"><img style="border-radius:3px;" src="{{image}}" alt="image {{model.created_time}}"/></figure>' +
-	      '<p><strong>{{model.created_time}}</strong><br/>{{model.caption.text}}</p>' +
-	      '</div>',
-	    filter: function(image) {
-	      // Change created_time.
-	      moment.locale('ru');
-	      var timestamp = new Date(image.created_time);
-	      var dateString = moment.unix(image.created_time).format('YYYY-MM-DD HH:mm');
-	      image.created_time = moment(dateString).startOf('minute').fromNow();
-	      // Change caption.
-	      if (image.caption.text.length > 150) {
-	        image.caption.text = image.caption.text.slice(0, 150) + '...';
-	      }
-	      // Return array.
-	      return image;
-	    },
-	    after: function() {
-        if (!this.hasNext()) {
-          loadButton.classList.add('is-hidden-mobile', 'is-hidden-tablet', 'is-hidden-desktop');
-        }
-      },
-	  });
-
-	  loadButton.addEventListener('click', function() {
-      feed.next();
-    });
     
-    feed.run();
-	}
+    let url = 'https://gderemonta.net/tech/instagramfeed.php?hashtag=';
+    let hashtag = '';
+    let feed = [];
+
+    const moment = require('moment');
+    moment.locale('ru');
+
+    axios.get(url + hashtag)
+    .then((response) => {
+      // Response array.
+      feed = response.data;
+
+      // Main array loop.
+      for (let item in feed) {
+        document.getElementById('instafeed').innerHTML += '<div class="column is-3 is-hide instafeed-item"><img style="border-radius:3px;" src="' + feed[item].url + '"/><strong>' + moment(moment.unix(feed[item].created_time).format('YYYY-MM-DD HH:mm')).startOf('minute').fromNow() + '</strong><p>' + feed[item].caption + '</p></div>';
+      }
+
+      // Define count.
+      let slice_count = 8;
+      let columns = document.querySelectorAll('.instafeed-item');
+      let slice_array = [...columns].slice(0, slice_count);
+      let load_more_button = document.getElementById('load-more');
+
+      // Show load more button.
+      if (columns.length <= slice_count) {
+        load_more_button.style.display = 'none';
+      }
+
+      // Load more photo.
+      if (columns.length > 0) {
+        // Show first 8 items.
+        for (let item in slice_array) {          
+          slice_array[item].classList.remove('is-hide');
+        }
+
+        // Click load more button.
+        load_more_button.addEventListener('click', function(event) {
+          event.preventDefault();
+
+          let columns_hide = document.querySelectorAll('.is-hide.instafeed-item');
+          let slice_array_hide = [...columns_hide].slice(0, slice_count);
+
+          // Load more items.
+          for (let item in slice_array_hide) {         
+            slice_array_hide[item].classList.remove('is-hide');
+          }
+          
+          // Show load more button.
+          if (columns_hide.length <= slice_count) {
+            load_more_button.style.display = 'none';
+          }
+        });      
+      }
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+  }
   
   export default {
     components: {
