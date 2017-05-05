@@ -402,3 +402,8 @@ hr.swal2-spacer {
     width: 120px;
   }
 }
+
+/* Instagram Feed */
+#instafeed .instafeed-item.is-hide {
+  display: none;
+}
