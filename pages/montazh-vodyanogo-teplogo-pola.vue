@@ -435,7 +435,6 @@
         feed = response.data;
 
         for (let item in feed) {
-          //console.log(feed[item]);
           document.getElementById('instafeed').innerHTML += '<div class="column is-3"><img style="border-radius:3px;" src="' + feed[item].url + '"/><strong>' + moment(moment.unix(feed[item].created_time).format('YYYY-MM-DD HH:mm')).startOf('minute').fromNow() + '</strong><p>' + feed[item].caption + '</p></div>';
         }
       })
