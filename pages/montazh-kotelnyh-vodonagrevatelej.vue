@@ -186,7 +186,7 @@
 
       // Main array loop.
       for (let item in feed) {
-        document.getElementById('instafeed').innerHTML += '<div class="column is-3 is-hide instafeed-item"><img style="border-radius:3px;" src="' + feed[item].url + '"/><strong>' + moment(moment.unix(feed[item].created_time).format('YYYY-MM-DD HH:mm')).startOf('minute').fromNow() + '</strong><p>' + feed[item].caption + '</p></div>';
+        document.getElementById('instafeed').innerHTML += '<div class="column is-one-quarter-desktop is-half-tablet is-hide instafeed-item"><img style="border-radius:3px;" src="' + feed[item].url + '"/><p><strong>' + moment(moment.unix(feed[item].created_time).format('YYYY-MM-DD HH:mm')).startOf('minute').fromNow() + '</strong></p><p>' + feed[item].caption + '</p></div>';
       }
 
       // Define count.
