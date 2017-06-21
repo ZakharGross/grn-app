@@ -132,7 +132,7 @@
                       <tr><td>Укладка ламината</td><td>300 руб./м<sup>2</sup></td></tr>
                     </tbody>
                   </table>
-                  <h3>Стяжка</h3>
+                  <h3>Стяжка (с материалом)</h3>
                   <table class="table is-striped">
                     <tbody>                       
                       <tr><td>Монтаж полусухой стяжки (от 100 м<sup>2</sup>)</td><td>600&nbsp;руб./м<sup>2</sup></td></tr>

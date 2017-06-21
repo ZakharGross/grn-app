@@ -256,7 +256,7 @@
                       <tr><td>Монтаж радиатора на стену</td><td>2000&nbsp;руб./шт.</td></tr>
                     </tbody>
                   </table>
-                  <h3>Стяжка</h3>
+                  <h3>Стяжка (с материалом)</h3>
                   <table class="table is-striped">
                     <tbody>                       
                       <tr><td>Монтаж полусухой стяжки (от 100 м<sup>2</sup>)</td><td>600&nbsp;руб./м<sup>2</sup></td></tr>

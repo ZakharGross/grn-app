@@ -23,7 +23,7 @@
 		<ul class="list-category">
 			<li><a href="/santehnika-luboy-slozhnosti/">Сантехника любой сложности</a></li>
 			<li><a href="/montazh-kotelnyh-vodonagrevatelej/">Монтаж котлов и водонагревателей</a></li>
-			<li><a href="/ustanovka-skvazhinnogo-nasosa/">Установка скваженного насоса</a></li>
+			<!--<li><a href="/ustanovka-skvazhinnogo-nasosa/">Установка скваженного насоса</a></li>-->
 		</ul>
   </div>
 </template>
