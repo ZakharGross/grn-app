@@ -6,6 +6,8 @@
         <input v-mask="'+7 (###) ###-##-##'" v-model="client_phone" name="client_phone" placeholder="Телефон для связи *" type="tel" required="" />
       </p>
       <p><button v-on:click.prevent="sendOffer()" class="button is-warning is-medium">Отправить заявку!</button></p>
+        <br/>
+        <p style="font-size: .75rem;">Нажимая на кнопку, Вы даете согласие на обработку своих персональных данных. Прочитать условия <a href="/license/" target="_blank">Пользовательского соглашения</a>.</p>
     </form>
   </div>
 </template>

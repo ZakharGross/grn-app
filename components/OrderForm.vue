@@ -16,6 +16,8 @@
               </p>
               <p><button v-on:click.prevent="sendOffer()" class="button is-warning is-medium">Отправить заявку!</button></p>
             </form>
+            <br/>
+            <p class="license">Нажимая на кнопку, Вы даете согласие на обработку своих персональных данных. Прочитать условия <a href="/license/" target="_blank">Пользовательского соглашения</a>.</p>
           </div>
         </div>		
       </div>

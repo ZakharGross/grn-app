@@ -217,6 +217,16 @@ ul.list-category li a {
   border-radius: 3px;
 }
 
+/* License */
+
+.license {
+    font-size: .75rem;
+    color: #fff;
+}
+.license a {
+    color: #fff;
+}
+
 /* Pages */
 
 .is-order-form {

@@ -7,6 +7,7 @@
         <div class="column is-one-third"><input v-mask="'+7 (###) ###-##-##'" v-model="client_phone" name="client_phone" placeholder="Телефон *" type="tel" required="" /></div>
         <div class="column is-one-third"><button v-on:click.prevent="sendOffer()" class="button is-warning is-medium">Отправить заявку</button></div>
       </div>
+        <p style="font-size: .75rem;">Нажимая на кнопку, Вы даете согласие на обработку своих персональных данных. Прочитать условия <a href="/license/" target="_blank">Пользовательского соглашения</a>.</p>
     </form>
   </div>
 </template>
